@@ -1,0 +1,23 @@
+@import '../abstract/global.scss';
+
+.resume {
+  background: 
+    url("../assets/Resume.png");
+ background-repeat:no-repeat;
+ background-size: cover;
+ padding: 90rem 0;
+ margin: 2rem;
+  background-position:center;
+  height: 100vh;
+  @include respond(phone) {
+     background-size: contain; 
+     padding: 1rem;
+     margin: .5rem;
+  }
+  @include respond(tab) {
+     background-size: contain; 
+     padding: 1rem;
+     margin: .5rem;
+  }
+ 
+}

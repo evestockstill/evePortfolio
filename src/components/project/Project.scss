@@ -1,0 +1,133 @@
+@import "../abstract/global.scss";
+
+.title {
+  margin: 4rem 0;
+}
+.title-text {
+  text-align: center;
+  font-size: 4em;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-image: linear-gradient(to right, $orange2, $orange1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+  transition: all 0.2s;
+
+  @include respond(tab-port) {
+    // margin-top: 3rem;
+  }
+  @include respond(phone) {
+    // margin-bottom: 2rem;
+  }
+  &:hover {
+    transform: skewY(3deg) skewX(15deg) scaleX(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba($black, 0.2);
+  }
+}
+
+
+#projects {
+  min-height: 100vh;
+  background: url("../assets/person.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 2rem 0 8rem 0;
+}
+
+  .project-container {
+    max-width: 90vw;
+    margin: 0 auto;
+    color:#e0e2db;
+  }
+
+  .project-item {
+    overflow: hidden;
+    position: relative;
+    padding: 6rem;
+    .fafa {
+      color: $orange1;
+      margin-bottom: 3.5rem;
+      font-size: 5.5rem;
+    }
+  }
+    .project-item-black {
+      background: linear-gradient($black-med, $black-med);
+      // background: linear-gradient($orange1, $orange1);
+      color: white;
+      a {
+    padding: 2rem;
+    font-size: 2rem;
+    color: white;
+    margin: 1rem;
+    text-decoration: none;
+
+  }
+    }
+
+   .project-item-white {
+      background: linear-gradient($whiteShadow1, $whiteShadow1);
+      color: #191716;
+      a {
+    padding: 2rem 2rem;
+    font-size: 2rem;
+    color: black;
+    margin: 1rem;
+    text-decoration: none;
+  }
+    }
+  
+    .front-text {
+      text-align: center;
+      transition: transform 2s;
+      font-size: 2.5rem;
+    
+    }
+    .back-text {
+      position: absolute;
+      bottom: -25.4em;
+      width: 75%;
+      margin: 0 auto;
+      height: 100%;
+      transition: bottom 2s;
+      padding: 3rem 0;
+      font-size: 1.3rem;
+      
+      &:hover {
+        bottom: 0;
+      }
+      h1 {
+       margin-bottom: 2.2rem;
+       font-size: 2rem;
+       color: $orange1;
+     }
+    }
+  .back-text button {
+    margin: 2rem 1rem .5rem 1rem;
+      padding: 2.5rem, 2rem;
+      background: transparent;
+      border: 2px solid $orange1;
+        &:hover {
+        background: $orange1;
+      }
+      
+  }
+  .project-item-white button {
+    background-color: $orange1;
+    &:hover {
+      background-color: $orange3;
+    }
+  }
+  .project-item:hover .front-text {
+    transform: translateY(-22rem);
+  }
+  .project-item:hover .back-text {
+bottom: 0;
+  }
+
+  .linkbtn {
+    padding: 1rem;
+  }

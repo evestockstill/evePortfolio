@@ -1,0 +1,59 @@
+@import '../abstract/global.scss';
+nav {
+display: flex;
+justify-content: flex-end;
+flex-direction: row;
+  // border-top: .5rem solid $black;
+
+background-color:$black;
+@include respond(phone) {
+  justify-content: center;
+}
+
+nav ul {
+  list-style-type: none;
+  border-top: 1rem solid $yellow1;
+  display: flex;
+justify-content: space-between;
+flex-direction: row;
+}
+li {
+  display: inline-block;
+  color: $orange1;
+ 
+}
+.fa {
+color: $orange1;
+ margin-left: 1rem;
+ @include respond(phone) {
+     margin-left: .4rem;
+   }
+ &:hover {
+  opacity: .8;
+ }
+}
+
+#github, #linkedin, #resume{
+  height: 2.4rem;
+  width: 2.4rem;
+  @include respond(phone) {
+    height: 2rem;
+  width: 2rem;
+   }
+}
+ .links {
+   text-decoration: none;
+   display: block;
+   text-align: center;
+   font-size: 1.6rem;
+   padding: 1.5rem 1rem 0 1rem;
+   color: $orange1;
+   @include respond(phone) {
+     font-size: 1.5rem;
+     padding: 2.5rem .7rem 0 .7rem;
+   }
+   &:hover {
+  	text-shadow: -1px -1px 5px $whiteShadow, 1px -1px 5px $whiteShadow, -1px 1px 0 $whiteShadow, 1px 1px 0 $whiteShadow, 0 -2px 8px, 0 0 2px, 0 0 5px #ff7e00, 0 0 10px #ff4444, 0 0 2px #ff7e00, 0 2px 3px #000;
+ }
+ }
+}
