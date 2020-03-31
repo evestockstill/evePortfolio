@@ -23,7 +23,6 @@
     z-index: -1;
     background-blend-mode: screen;
     @include respond(phone) {
-      display: none;
       height: 20%;
     }
     @include respond(tab-port) {
