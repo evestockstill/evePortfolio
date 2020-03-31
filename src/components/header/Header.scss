@@ -32,9 +32,6 @@
     @include text-color(7.3rem);
     top: 18%;
     left: 50%;
-    @include respond(phone) {
-      font-size: 6.5rem;
-    }
   }
   .my-title {
     @include text-color(3rem);
@@ -50,9 +47,6 @@
     @include text-color(7.3rem);
     top: 27%;
     left: 50%;
-    @include respond(phone) {
-      font-size: 6.5rem;
-    }
     &:before {
       content: attr(data);
       position: absolute;
