@@ -1,1 +1,125 @@
 @import '../abstract/global.scss';
+
+.hero {
+  height: 25vh;
+  border-bottom: 0.5rem solid $orange1;
+  margin-bottom: 2rem;
+  @include respond(phone) {
+    height: 5vh;
+  }
+  @include respond(tab-port) {
+    height: 15vh;
+  }
+  @include respond(tab-port-big) {
+    height: 20vh;
+  }
+
+  .bg-video1 {
+    // display: none;
+    filter: grayscale(1);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: auto;
+    z-index: -1;
+    background-blend-mode: screen;
+    &__content {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+.about{
+  min-height: 100vh;
+ background-color: black;
+  padding: 2rem 0 8rem 0;
+}
+
+.about-container {
+  max-width: 80vw;
+  margin: 0 auto;
+  padding: 2rem 4rem;
+  font-size: 1.6rem;
+ background-color: rgb(190, 186, 186);
+  @include respond(phone) {
+    max-width: 86vw;
+  }
+}
+.greeting {
+    @include text-color(8.3rem);
+    top: 10%;
+    left: 50%;
+  transition: all 0.2s;
+
+    @include respond(phone) {
+      font-size: 6.5rem;
+    }
+  }
+img {
+  height: 30rem;
+  max-width: 30em;
+  filter: grayscale(1);
+}
+.composition {
+  position: relative;
+
+  &__photo {
+    width: 55%;
+    box-shadow: 0 1.5rem 4rem rgba($black, 0.4);
+    border-radius: 2px;
+    position: absolute;
+    z-index: 10;
+    transition: all 0.2s;
+    outline-offset: 2rem;
+
+    // @include respond(tab-port) {
+    //   float: left;
+    //   position: relative;
+    //   width: 33.3333;
+    //   box-shadow: 0 1.5rem 3rem rgba($black, 0.2);
+    // }
+
+    &--p1 {
+      left: 30%;
+      top: 8rem;
+
+      @include respond(tab-port) {
+        top: 0;
+          top: 0;
+        transform: scale(1.2);
+      }
+    }
+    &--p2 {
+      right: 24%;
+      top: 10rem;
+
+      @include respond(tab-port) {
+        top: -1;
+        transform: scale(1.3);
+        z-index: 100;
+      }
+    }
+
+    &--p3 {
+      left: 40%;
+      top: 20rem;
+
+      @include respond(tab-port) {
+        left: 0;
+          top: 1rem;
+        transform: scale(1.1);
+      }
+    }
+
+    &:hover {
+      outline: 1.5rem solid $orange1;
+      transform: scaleX(1.05) translateY(-0.5rem);
+      box-shadow: 0 2.5rem 4rem rgba($orange1, 0.5);
+      z-index: 20;
+    }
+  }
+  &:hover &__photo:not(:hover) {
+    transform: scaleX(0.95);
+  }
+}

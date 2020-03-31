@@ -1,16 +1,28 @@
 import React from 'react';
 import '../resume/Resume.scss';
-import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {  NavLink } from 'react-router-dom';
 
 const Resume = () => {
+  const Home = (
+    <NavLink to='/' className='return-home'>
+   
+      <FontAwesomeIcon
+        icon='backward'
+        className='faback'
+        id='back'
+      ></FontAwesomeIcon>
+    </NavLink>
+  );
   return (
     <>
-      <div className='wrapper'>
-        <Link className='linkhome' to='/'>Back</Link>
-        <div className='resume'> 
-       
-        </div>
-      </div>
+      {Home}
+      {/* <div className='wrapper'>
+        <Link className='linkhome' to='/'>
+          Back
+        </Link> */}
+        <div className='resume'></div>
+      {/* </div> */}
     </>
   );
 };

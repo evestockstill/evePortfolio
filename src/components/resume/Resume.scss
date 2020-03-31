@@ -1,46 +1,43 @@
-@import '../abstract/global.scss';
-.linkhome {
+@import "../abstract/global.scss";
+.faback {
    display: flex;
-   justify-content: flex-end;
-   padding-right: 2rem;
-   padding-top: 2rem;
-   text-decoration: none;
-   color: white;
-   font-size: 1.5rem;
+   margin-left: 3rem;
+   margin-top: 1.5rem;
+   color: $orange1;
+   font-size: 3.5rem;
 }
 .resume {
-  background: 
-    url("../assets/Resume.png");
- background-repeat:no-repeat;
- background-size: cover;
- padding: 90rem 0;
- margin: 2rem;
-  background-position:center;
-  height: 100vh;
-  @include respond(phone) {
-     background-size: contain; 
-     padding: 1rem;
-     margin: .5rem;
-  }
-  @include respond(tab) {
-     background-size: contain; 
-     padding: 1rem;
-     margin: .5rem;
-  }
-  @include respond(tab-port-big) {
-     background-size: contain; 
-     padding: 1rem;
-     margin: .5rem;
-  }
-  @include respond(big) {
-     background-size: cover; 
-     padding: 105rem 0;
-     margin: 1rem;
-  }
-  @include respond(big-desktop) {
-     background-size: cover; 
-     padding: 110rem 0;
-     margin: 1rem;
-  }
- 
+   background: url("../assets/Resume.png");
+   background-repeat: no-repeat;
+   background-size: cover;
+   filter: grayscale(1);
+   padding: 90rem 0;
+   margin: 2rem;
+   background-position: center;
+   height: 100vh;
+   @include respond(phone) {
+      background-size: contain;
+      padding: 1rem;
+      margin: 0.5rem;
+   }
+   @include respond(tab) {
+      background-size: contain;
+      padding: 1rem;
+      margin: 0.5rem;
+   }
+   @include respond(tab-port-big) {
+      background-size: contain;
+      padding: 1rem;
+      margin: 0.5rem;
+   }
+   @include respond(big) {
+      background-size: cover;
+      padding: 105rem 0;
+      margin: 1rem;
+   }
+   @include respond(big-desktop) {
+      background-size: cover;
+      padding: 110rem 0;
+      margin: 1rem;
+   }
 }

@@ -16,27 +16,15 @@ const Header = () => {
                 your browser not supported
               </video>
             </div>
-            <span className='background-border'></span>
-            <div id='wrapper' className='animation'>
-              <span className='first-wrapper'>
-                <h2 className='first'>Eve</h2>
-              </span>
-              <span className='last-wrapper'>
-                <h2 className='text' data='.'>
-                  Stockstill
-                </h2>
-              </span>
-              <span className='title'>Full Stack Developer</span>
-            </div>
+            <h2 className='first'>Eve</h2>
+            <h2 className='text' data='.'>
+              Stockstill
+            </h2>
+            <h4 className='my-title'>Software Developer</h4>
           </header>
-          {/* <div>
-            <Project />
-          </div> */}
         </div>
       </div>
     </>
   );
 };
 export default Header;
-
-
