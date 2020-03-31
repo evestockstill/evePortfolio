@@ -3,16 +3,13 @@ nav {
 display: flex;
 justify-content: flex-end;
 flex-direction: row;
-  // border-top: .5rem solid $black;
-
-background-color:$black;
+background-color: black;
 @include respond(phone) {
   justify-content: center;
 }
 
 nav ul {
   list-style-type: none;
-  border-top: 1rem solid $yellow1;
   display: flex;
 justify-content: space-between;
 flex-direction: row;
@@ -24,16 +21,17 @@ li {
 }
 .fa {
 color: $orange1;
+font-size: 2.9rem;
  margin-left: 1rem;
  @include respond(phone) {
      margin-left: .4rem;
+     display: none;
    }
  &:hover {
   opacity: .8;
  }
 }
-
-#github, #linkedin, #resume{
+#github, #linkedin, #user, #card{
   height: 2.4rem;
   width: 2.4rem;
   @include respond(phone) {

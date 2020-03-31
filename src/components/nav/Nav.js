@@ -2,16 +2,25 @@ import React from 'react';
 import './Nav.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { NavLink } from 'react-router-dom';
-// import Resume from '../resume/Resume';
 
 const Nav = () => {
   const user = (
-    <NavLink to='/resume' className='links'>
-      Resume
+    <NavLink to='/aboutMe' className='links'>
+     About 
       <FontAwesomeIcon
         icon='user'
         className='fa'
-        id='resume'
+        id='card'
+      ></FontAwesomeIcon>
+    </NavLink>
+  );
+  const aboutMe = (
+    <NavLink to='/resume' className='links'>
+      Resume
+      <FontAwesomeIcon
+        icon='address-card'
+        className='fa'
+        id='user'
       ></FontAwesomeIcon>
     </NavLink>
   );
@@ -48,6 +57,7 @@ const Nav = () => {
       <nav>
         <ul>
           <li>{user}</li>
+          <li>{aboutMe}</li>
           <li>{linkedIn}</li>
           <li>{github}</li>
         </ul>
