@@ -4,17 +4,10 @@
   height: 45vh;
   border-bottom: 0.5rem solid $orange1;
   @include respond(phone) {
-    height: 10vh;
+    height: 42vh;
   }
-  @include respond(tab-port) {
-    height: 35vh;
-  }
-  @include respond(tab-port-big) {
-    height: 40vh;
-  }
-
   .bg-video {
-    // display: none;
+    display: none;
     filter: grayscale(1);
     top: 0;
     left: 0;
@@ -26,22 +19,21 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+      @include respond(phone) {
+        display: none;
+      }
     }
   }
   .first {
     @include text-color(7.3rem);
-    top: 18%;
+    top: 19%;
     left: 50%;
   }
   .my-title {
     @include text-color(3rem);
-    top: 35%;
+    top: 34%;
     left: 50%;
     text-align: center;
-    @include respond(phone) {
-      font-size: 2.6rem;
-      top: 34%;
-    }
   }
   .text {
     @include text-color(7.3rem);

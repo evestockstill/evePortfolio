@@ -10,15 +10,15 @@
 @mixin respond($breakpoint) {
   @if $breakpoint == xphone {
     @media(max-width: 31em) { @content }; 
-    overflow: hidden;
+    // overflow: hidden;
   }
   @if $breakpoint == phone {
     @media(max-width: 37.5em) { @content }; 
-    overflow: hidden;
+    // overflow: hidden;
   }
   @if $breakpoint == tab-port {
     @media(max-width: 56.25em) { @content }; //900px
-    overflow: hidden;
+    // overflow: hidden;
   }
   @if $breakpoint == tab-port-big {
     @media(max-width: 65.25em) { @content }; //900px
