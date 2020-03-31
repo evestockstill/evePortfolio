@@ -1,5 +1,13 @@
 @import '../abstract/global.scss';
-
+.linkhome {
+   display: flex;
+   justify-content: flex-end;
+   padding-right: 2rem;
+   padding-top: 2rem;
+   text-decoration: none;
+   color: white;
+   font-size: 1.5rem;
+}
 .resume {
   background: 
     url("../assets/Resume.png");
@@ -18,6 +26,21 @@
      background-size: contain; 
      padding: 1rem;
      margin: .5rem;
+  }
+  @include respond(tab-port-big) {
+     background-size: contain; 
+     padding: 1rem;
+     margin: .5rem;
+  }
+  @include respond(big) {
+     background-size: cover; 
+     padding: 105rem 0;
+     margin: 1rem;
+  }
+  @include respond(big-desktop) {
+     background-size: cover; 
+     padding: 110rem 0;
+     margin: 1rem;
   }
  
 }

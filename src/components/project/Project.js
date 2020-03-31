@@ -101,9 +101,7 @@ const Project = () => {
                 Pet Pals is an app that connects neighbors and their dogs to
                 each other to exchange a quick walk or bathroom break when
                 working opposite shifts. Done in a week long sprint with mob,
-                pair, and solo coding. I was responsible for the design wire
-                frame and applied the styling for most of the project. I also
-                worked on the back end creating models and routes. Created with
+                pair, and solo coding. I worked on the overall design, styling and helped created models and routes. Created with
                 React, Hooks, MongoDB, socket.io, SASS, npx, Jest
               </p>
               <button className='btn'>{githubPet}</button>
@@ -137,10 +135,10 @@ const Project = () => {
             <div className='back-text'>
               <h1>Guess Who</h1>
               <p>
-                Guess who? is a updated version of the old board game. Using
+                Guess who? Updating the old game with
                 conscientious decisions to exclude gender and race questions
-                to reflect current times. Guess to eliminate characters until your turns are up or you can
-                enter the correct guess. Using local storage to persist user
+                to reflect current times. Guess to eliminate characters and win by making a correct guess.
+                Using local storage to persist user
                 data and leader boards. Responsible for the game board
                 animations and styling. Created with vanilla JavaScript,
                 HTML/CSS, local storage
@@ -158,9 +156,9 @@ const Project = () => {
               <h1>Music Search</h1>
               <p>
                 Music Search is a app that lets you search music artist by name.
-                Search through the artist of your choice albums to find songs, and choose song to
+                Search through the artist to find albums. Choose album to find songs, and choose song to
                 discover lyrics. Functionality create in a team of 3 in a 2 day
-                sprint. I designed the site in the next two days. Created with
+                sprint. I used another 2 days to design site. Created with
                 React, custom Hooks, REST APIs, and PostCSS
               </p>
               <button className='btn'>{githubMusic}</button>
