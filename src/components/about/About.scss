@@ -33,13 +33,20 @@
     }
   }
 }
+#about-title-text {
+  font-size: 2.5rem;
+  padding-top: 3.5rem;
+  @include respond(phone) {
+      font-size: 2rem;
+    }
+}
 
 .center {
   .about-wrapper {
     display: flex;
     justify-content: center;
     max-width: 100%;
-    margin: 5rem auto;
+    margin: 1rem auto;
   }
   .comp {
     width: 60%;
@@ -47,7 +54,7 @@
     margin: 1.5rem;
     box-shadow: 0 2px 1rem rbga(0, 0, 0, 0.8);
     padding: 1.5rem;
-    background: white;
+    background: black;
     border-radius: 1rem;
     @include clearfix;
 
@@ -56,21 +63,29 @@
       height: 25rem;
       border-radius: 50%;
       float: left;
-      margin: 4rem 2rem 3rem 0;
-      border: 5px solid white;
+      margin: 3rem 2rem 3rem 0;
+      border: 5px solid black;
       shape-outside: circle();
-      // @include clearfix;
+      z-index: 10;
+    cursor: pointer;
+    transition: all 0.2s;
+    outline-offset: 2rem;
       @include respond(phone) {
-        width: 10rem;
-        height: 10rem;
-      }
-      @include respond(tab-port) {
         width: 20rem;
         height: 20rem;
       }
+       &:hover {
+        transform: scaleX(1.05) translateY(-0.5rem);
+        box-shadow: 0 2.5rem 4rem rgba($orange1, 0.5);
+        z-index: 20;
+      }
+
+      &:hover &__photo:not(:hover) {
+        transform: scaleX(0.95);
+      }
     }
     .about-text {
-  color: red;
+  color: rgb(206, 203, 203);
 }
     .img2 {
       width: 20rem;
@@ -78,17 +93,25 @@
 
       border-radius: 50%;
       float: right;
-      margin: 0.1rem 0 0rem 3rem;
-      border: 5px solid white;
+      margin: 2.5rem 0 0 2rem;
+      border: 5px solid black;
       shape-outside: circle();
-      // @include clearfix;
+      z-index: 10;
+    cursor: pointer;
+    transition: all 0.2s;
+    outline-offset: 2rem;
+      @include clearfix;
       @include respond(phone) {
-        width: 12rem;
-        height: 12rem;
-      }
-      @include respond(tab-port) {
         width: 15rem;
         height: 15rem;
+      }
+       &:hover {
+        transform: scaleX(1.05) translateY(-0.5rem);
+        box-shadow: 0 2.5rem 7rem rgba($orange1, 0.5);
+        z-index: 20;
+      }
+      &:hover &__photo:not(:hover) {
+        transform: scaleX(0.95);
       }
     }
     .intro {
@@ -96,89 +119,18 @@
     }
     .about-text {
       text-align: justify;
-      line-height: 1.6rem;
+      line-height: 2.3rem;
+      font-size: 1.5rem;
+      @include respond(phone) {
+        line-height: 2.2rem;
+      }
+      
     }
   }
 }
-// padding: 5rem;
-// background-color: $orange1;
-
-//   padding: 2rem 4rem;
-//   font-size: 1.6rem;
-//  background-color: rgb(190, 186, 186);
-//   @include respond(phone) {
-//     max-width: 86vw;
-//   }
-
-// img {
-//   height: 40rem;
-//   max-width: 40em;
-//   border-radius: 50%;
-//   margin: 2rem;
-//   // filter: grayscale(1);
-// }
-// .composition {
-//   background-color: red;
-//   position: relative;
-//   // width: 100%;
-//   padding: 5rem;
-//   &__photo {
-//     // width: 55%;
-//     position: relative;
-//     overflow: hidden;
-//     width: 100%;
-//     box-shadow: 0 1.5rem 4rem rgba($black, 0.1);
-//     // border-radius: 2px;
-//     // position: absolute;
-//     // z-index: 10;
-//     // cursor: pointer;
-//     // transition: all 0.2s;
-//     // outline-offset: 2rem;
-
-//     // @include respond(tab-port) {
-//     //   display: flex;
-//     //   justify-content: space-evenly;
-//     //   flex-direction: column;
-//     //   align-items: center;
-//     // }
-
-//     &--p1 {
-//       height: 35rem;
-//       max-width: 34em;
-//       float: left;
-//       border-radius: 50%;
-//       margin: 2rem;
-//     }
-//     &--p2 {
-//     }
-
-//     &--p3 {
-//       height: 25rem;
-//       max-width: 25em;
-//       float: right;
-//       top: 0;
-//       border-radius: 50%;
-//       margin: 2rem;
-
-//       &:hover {
-//         // outline: 1.5rem solid $orange1;
-//         // transform: scaleX(1.05) translateY(-0.5rem);
-//         // box-shadow: 0 2.5rem 4rem rgba($orange1, 0.5);
-//         // z-index: 20;
-//       }
-
-//       &:hover &__photo:not(:hover) {
-//         // transform: scaleX(0.95);
-//       }
-//     }
-//     .into {
-//       color: white;
-//     }
-//   }
-
 .faback1 {
   display: inline;
   color: $orange1;
-  margin: 0.5rem 0 0.1rem 0.5rem;
+  margin: 0.5rem 0 0.1rem 1.5rem;
   font-size: 1.7rem;
 }
