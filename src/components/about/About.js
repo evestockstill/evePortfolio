@@ -2,10 +2,8 @@ import React from 'react';
 import './About.scss';
 import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import dog from '../assets/isla.png';
-import hero from '../assets/profile.png';
 import pool from '../assets/mepool5.png';
-import camp from '../assets/camp2.jpg';
+import isla from '../assets/islagrass.png';
 import mp4 from '../assets/glitter.mp4';
 
 const AboutMe = () => {
@@ -13,56 +11,59 @@ const AboutMe = () => {
     <NavLink to='/' className='return-home'>
       <FontAwesomeIcon
         icon='backward'
-        className='faback'
-        id='back'
+        className='faback1'
+        id='about-back'
       ></FontAwesomeIcon>
     </NavLink>
   );
   return (
     <>
+      <p>{returnHome}</p>
       <header className='hero'>
         <div className='bg-video1'>
-          <p>{returnHome}</p>
-          <video className='bg-video__content' autoPlay muted loop>
+          <video className='bg-video1__content' autoPlay muted loop>
             <source src={mp4} type='video/mp4' alt='video' />
             your browser not supported
           </video>
         </div>
         <h1 className='greeting'>Hello</h1>
       </header>
-      <section className='about'>
-        <div className='about-container'>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae sit
-          itaque odit vel consectetur maxime porro consequatur, unde accusamus
-          recusandae distinctio ratione, aspernatur eum delectus! Quaerat
-          repellendus eligendi illo similique?
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae sit
-          itaque odit vel consectetur maxime porro consequatur, unde accusamus
-          recusandae distinctio ratione, aspernatur eum delectus! Quaerat
-          repellendus eligendi illo similique?
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae sit
-          itaque odit vel consectetur maxime porro consequatur, unde accusamus
-          recusandae distinctio ratione, aspernatur eum delectus! Quaerat
-          repellendus eligendi illo similique?
+      <div className='title-text' id='about-title-text'>
+        <h1>Let's talk about me</h1>
+      </div>
+      <div className='center'>
+        <div className='about-wrapper'>
+          <section className='comp'>
+            <p className='about-text'>
+              <img src={pool} alt='photo 1' className='img1'></img> I spent 20 years being an active listener and excellent
+              advice giver all while making fabulous cocktails. I believe in
+              good customer service and the ability to collaborate and enjoy
+               coworkers. The flexibility of bartending paved the way for me to
+              pursue my passion for billiards reaching professional status. I
+              dedicated years of practice to win state championships, and even
+              got to travel for some professional pool tournaments. These days I
+              play in local leagues, spending with time with teammates. I
+              enjoying sharing my knowledge, good sportsmanship, and love of the &nbsp;
+              <img src={isla} alt='photo 1' className='img2'></img>
+              game through example and advice. I even started up a meetup for
+              software developers to network and play pool! Software Engineers
+              talent pool. I look forward to being able to start that back up.
+              When not working on new code I enjoy spoiling my dog Isla. She
+              holds all my attention and we like going to parks and hiking
+              trails. We went on a 6 month road trip together camping and
+              swimming along the way. I enjoy
+creative development with a drive for front end 
+              development.I like component style architect with Sass or PostCSS
+to build reusable styles throughout a project.I have projects
+using React, Redux, Node.js, mongoDB.My best language is
+JavaScript but currently branching out with some online courses.I
+enjoy reading and learning new style techniques to make clean and
+interesting designs using best practices, and user experience in
+  mind.
+            </p>
+          </section>
         </div>
-        <div className='composition'>
-          <img
-            src={pool}
-            alt='photo 1'
-            className='composition__photo composition__photo--p1'
-          ></img>
-          <img
-            src={camp}
-            alt='photo 2'
-            className='composition__photo composition__photo--p2'
-          ></img>
-          <img
-            src={dog}
-            alt='photo 3'
-            className='composition__photo composition__photo--p3'
-          ></img>
-        </div>
-      </section>
+      </div>
     </>
   );
 };
