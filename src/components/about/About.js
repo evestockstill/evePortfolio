@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import pool from '../assets/mepool5.png';
 import isla from '../assets/islagrass.png';
 import mp4 from '../assets/glitter.mp4';
+import AboutMain from '../aboutMain/AboutMain';
 
 const AboutMe = () => {
   const returnHome = (
@@ -28,8 +29,12 @@ const AboutMe = () => {
         </div>
         <h1 className='greeting'>Hello</h1>
       </header>
-
-      <section className='section-aboutMe'>
+      <AboutMain />
+    </>
+  );
+};
+export default AboutMe;
+/* <section className='section-aboutMe'>
         <div className='big-picture'></div>
         
         <div className='about'>
@@ -71,4 +76,4 @@ const AboutMe = () => {
   );
 };
 
-export default AboutMe;
+export default AboutMe; */

@@ -1,0 +1,111 @@
+@import '../abstract/global.scss';
+#projects-about {
+  min-height: 100vh;
+  background: url("../assets/mepool5.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  filter: opacity(1);
+  padding: 2rem 0 8rem 0;
+}
+.project-container-about {
+  max-width: 90vw;
+  margin: 0 auto;
+  color: #e0e2db;
+  @include respond(phone) {
+    max-width: 86vw;
+  }
+}
+.project-item-about {
+  overflow: hidden;
+  position: relative;
+  padding: 20rem 6rem;
+  @include respond(phone) {
+      padding: 30rem 6rem;
+  }
+  
+  .fafa {
+    color: $orange1;
+    margin-bottom: 3.5rem;
+    font-size: 5.5rem;
+  }
+}
+.project-item-black-about {
+  background: linear-gradient($whiteShadow1, $whiteShadow1);
+  color: black;
+  @include respond(phone) {
+    background: linear-gradient($whiteShadow2, $whiteShadow2);
+  }
+  a {
+    padding: 2rem;
+    font-size: 2rem;
+    color: white;
+    margin: 1rem;
+    text-decoration: none;
+    @include respond(phone) {
+      // font-size: 1.3rem;
+      padding: 1rem;
+      margin: 0.5rem;
+    }
+  }
+}
+.front-text-about {
+  text-align: center;
+  transition: transform 2s;
+  font-size: 2.5rem;
+  @include respond(phone) {
+    // font-size: 1.8rem;
+  }
+}
+.back-text-about {
+  position: absolute;
+  bottom: -53.4em;
+  width: 75%;
+  margin: 0 auto;
+  height: 100%;
+  transition: bottom 2s;
+  padding: 3rem 0;
+  font-size: 1.6rem;
+  font-weight: 600;
+  @include respond(phone) {
+    padding: 0.8rem 0;
+    font-size: 0.9rem;
+    font-family: "Titillium Web", sans-serif;
+    line-height: 1.4;
+  }
+  @include respond(tab-port) {
+    font-size: 1.7rem;
+    padding: .5rem 0;
+    font-weight: normal;
+  }
+  @include respond(tab-port-big) {
+    font-size: 1.5rem;
+    padding: .5rem 0;
+    font-weight: normal;
+  }
+
+  &:hover {
+    bottom: 0;
+  }
+  h1 {
+    margin-bottom: 2.2rem;
+    font-size: 2rem;
+    color: transparent;
+    @include respond(phone) {
+      font-weight: bold;
+      margin-bottom: 0.7rem;
+    }
+    @include respond(tab-port) {
+      font-weight: bold;
+      margin: 1.8rem 0;
+    }
+  }
+}
+.project-item-about:hover .front-text-about {
+  transform: translateY(-42rem);
+  color: $orange1;
+}
+.project-item-about:hover .back-text-about {
+  bottom: 0;
+}
