@@ -20,7 +20,7 @@ nav {
   }
   .fa {
     font-size: 2rem;
-    margin-left: 1rem;
+  //  margin: 1rem;
     color: $orange1;
 
     @include respond(phone) {
@@ -32,12 +32,16 @@ nav {
     }
   }
   .links {
-    @include text-color(1.6rem, 1rem);
+    // @include text-color(1.6rem, 3rem);
+    // position: relative;
+    font-size: 1.6rem;
+    color: $orange1;
+    padding: 1rem;
     text-decoration: none;
     display: block;
     @include respond(phone) {
-      font-size: 2.2rem;
-      padding: 2rem;
+      font-size: 2.8rem;
+      padding: 2rem .6rem 0 .6rem;
     }
     &:hover {
       text-shadow: -1px -1px 5px $whiteShadow, 1px -1px 5px $whiteShadow, -1px 1px 0 $whiteShadow,

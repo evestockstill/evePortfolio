@@ -39,12 +39,12 @@ $font-weight: 700;
 $display: flex;
 $justify:  center;
 $align: center;
-// $transform: translate(-50%, -50%);
+$transform: translate(-50%, -50%);
 $absolute: absolute;
 $background: linear-gradient(to right, $orange2, $orange1); 
 $webclip: text;
 $clip:  text;
-// $height: 1;
+$height: 1;
 $color: transparent;
 
 @mixin text-color ($size, $padding){
@@ -53,13 +53,13 @@ $color: transparent;
   padding: $padding;
   // display: $display;
   // justify-content: $justify;
-  text-align: $align;
+  // text-align: $align;
   font-weight: $font-weight;
-  // transform: $transform;
-  // position: $absolute;
+  transform: $transform;
+  position: $absolute;
   background: $background;
    background-clip: $clip;
    -webkit-background-clip: text;
    color: $color;
-  //  line-height: $height;
+   line-height: $height;
 }

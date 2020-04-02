@@ -4,10 +4,10 @@
   height: 45vh;
   border-bottom: 0.5rem solid $orange1;
   @include respond(phone) {
-    height: 40vh;
+    height: 35vh;
   }
   .bg-video {
-    display: none;
+    // display: none;
     filter: grayscale(1);
     top: 0;
     left: 0;
@@ -28,14 +28,15 @@
     position: relative;
     .first1 {
       @include text-color(7.3rem, 0rem);
-      padding-top: 3rem;
+      
       @include respond(phone) {
-        padding-top: 6rem;
+        // padding-top: 6rem;
       }
     }
     .third3 {
       @include text-color(2.3rem, 0);
       padding-top: 8rem;
+      // z-index: 1000;
       letter-spacing: 0.6rem;
       @include respond(phone) {
         font-size: 3rem;
@@ -43,10 +44,11 @@
     }
     .second2 {
       @include text-color(7.3rem, 0rem);
-      transform: translate(-50%, -40%);
+      // transform: translate(-50%, -50%);
       left: 50%;
-      padding-top: 3rem;
-      position: absolute;
+      bottom: 55%;
+      // padding-top: 3rem;
+      // position: absolute;
       &:before {
         content: attr(data);
         position: absolute;

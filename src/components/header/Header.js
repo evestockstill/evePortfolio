@@ -15,13 +15,14 @@ const Header = () => {
           </video>
         </div>
         <div className='center-heading'>
-          <h2 className='title-text first1'>Eve</h2>
-          <h2 className='title-text second2' data='.'>
+          <h2 className='first1'>Eve</h2>
+          <h2 className='second2' data='.'>
             Stockstill
           </h2>
           <div className=''>
-            <h4 className='title-text third3'>Software Developer</h4>
+            <h4 className='third3'>Software Developer</h4>
           </div>
+           {/* </video> */}
         </div>
       </header>
     </>
