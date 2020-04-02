@@ -4,10 +4,10 @@
   height: 45vh;
   border-bottom: 0.5rem solid $orange1;
   @include respond(phone) {
-    height: 42vh;
+    height: 40vh;
   }
   .bg-video {
-    // display: none;
+    display: none;
     filter: grayscale(1);
     top: 0;
     left: 0;
@@ -24,37 +24,46 @@
       }
     }
   }
-  
-  .first {
-    @include text-color(7.3rem);
-    top: 19%;
-    left: 50%;
-  }
-  .my-title {
-    @include text-color(3rem);
-    top: 34%;
-    left: 50%;
-    text-align: center;
-  }
-  .text {
-    @include text-color(7.3rem);
-    top: 27%;
-    left: 50%;
-    &:before {
-      content: attr(data);
-      position: absolute;
-      overflow: hidden;
-      color: $grey-med;
-      width: auto;
-      z-index: 5;
-      text-shadow: none;
-      left: 80.5%;
-      bottom: 55%;
-      text-align: left;
-      animation: moveInLeft 1s ease-out, flicker 2.2s linear infinite;
-      letter-spacing: 0.2rem;
+  .center-heading {
+    position: relative;
+    .first1 {
+      @include text-color(7.3rem, 0rem);
+      padding-top: 3rem;
       @include respond(phone) {
-        color: $orange1;
+        padding-top: 6rem;
+      }
+    }
+    .third3 {
+      @include text-color(2.3rem, 0);
+      padding-top: 8rem;
+      letter-spacing: 0.6rem;
+      @include respond(phone) {
+        font-size: 3rem;
+      }
+    }
+    .second2 {
+      @include text-color(7.3rem, 0rem);
+      transform: translate(-50%, -40%);
+      left: 50%;
+      padding-top: 3rem;
+      position: absolute;
+      &:before {
+        content: attr(data);
+        position: absolute;
+        overflow: hidden;
+        color: $grey-med;
+        width: auto;
+        z-index: 5;
+        text-shadow: none;
+        left: 80.5%;
+        bottom: 33.6%;
+        animation: moveInLeft 1s ease-out, flicker 2.2s linear infinite;
+        letter-spacing: 0.2rem;
+        @include respond(phone) {
+          color: $orange1;
+             left: 80.1%;
+        bottom: 33.2%;
+        }
       }
     }
   }

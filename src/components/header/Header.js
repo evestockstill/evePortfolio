@@ -6,24 +6,24 @@ import Nav from '../nav/Nav';
 const Header = () => {
   return (
     <>
-      <div className='wrapper'>
-        <div className='background'>
-          <header className='header'>
-            <Nav />
-            <div className='bg-video'>
-              <video className='bg-video__content' autoPlay muted loop>
-                <source src={mp4} type='video/mp4' alt='video' />
-                your browser not supported
-              </video>
-            </div>
-            <h2 className='first'>Eve</h2>
-            <h2 className='text' data='.'>
-              Stockstill
-            </h2>
-            <h4 className='my-title'>Software Developer</h4>
-          </header>
+      <header className='header'>
+        <Nav />
+        <div className='bg-video'>
+          <video className='bg-video__content' autoPlay muted loop>
+            <source src={mp4} type='video/mp4' alt='video' />
+            your browser not supported
+          </video>
         </div>
-      </div>
+        <div className='center-heading'>
+          <h2 className='title-text first1'>Eve</h2>
+          <h2 className='title-text second2' data='.'>
+            Stockstill
+          </h2>
+          <div className=''>
+            <h4 className='title-text third3'>Software Developer</h4>
+          </div>
+        </div>
+      </header>
     </>
   );
 };

@@ -36,45 +36,30 @@
 
 $font: quiche-sans,sans-serif;
 $font-weight: 700;
-$transform: translate(-50%, -50%);
+$display: flex;
+$justify:  center;
+$align: center;
+// $transform: translate(-50%, -50%);
 $absolute: absolute;
 $background: linear-gradient(to right, $orange2, $orange1); 
 $webclip: text;
 $clip:  text;
-$height: 1;
+// $height: 1;
 $color: transparent;
 
-@mixin text-color ($size){
+@mixin text-color ($size, $padding){
   font-family: $font;
   font-size: $size;
+  padding: $padding;
+  // display: $display;
+  // justify-content: $justify;
+  text-align: $align;
   font-weight: $font-weight;
-  transform: $transform;
-  position: $absolute;
+  // transform: $transform;
+  // position: $absolute;
   background: $background;
    background-clip: $clip;
    -webkit-background-clip: text;
    color: $color;
-   line-height: $height;
-}
-@mixin hardwareAccel() {
-	// Improve performance on mobile/tablet devices
-	// Perspective reduces blurryness of text in Chrome
-	@include prefixed(transform, perspective(1px) translateZ(0));
-}
-
-@mixin improveAntiAlias() {
-	// Improve aliasing on mobile/tablet devices
-	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-}
-
-@mixin forceBlockLevel() {
-	// Transforms need to be block-level to work
-	display: inline-block;
-	vertical-align: middle;
-}
-
-@mixin hacks() {
-	@include forceBlockLevel();
-	@include hardwareAccel();
-	@include improveAntiAlias();
+  //  line-height: $height;
 }

@@ -4,22 +4,9 @@
   margin: 4rem 0;
 }
 .title-text {
+  @include text-color(4em, 0em); 
   text-align: center;
-  font-size: 4em;
-  text-transform: uppercase;
-  font-weight: 700;
-  background-image: linear-gradient(to right, $orange2, $orange1);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  letter-spacing: 2px;
-  transition: all 0.2s;
-  &:hover {
-    transform: skewY(3deg) skewX(15deg) scaleX(1.1);
-    text-shadow: 0.5rem 1rem 2rem rgba($black, 0.2);
-  }
 }
-
 #projects {
   min-height: 100vh;
   background: url("../assets/person.png");

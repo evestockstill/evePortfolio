@@ -23,7 +23,7 @@
     }
   }
   .greeting {
-    @include text-color(8.3rem);
+    @include text-color(8.3rem, 1rem);
     top: 10%;
     left: 50%;
     transition: all 0.2s;
@@ -47,7 +47,7 @@
   //   margin: 1rem auto;
   // }
 .heading-one {
-  @include text-color(3.5rem);
+  @include text-color(3.5rem, 1rem);
 }
 .section-me {
   padding: 15rem 0;
