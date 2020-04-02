@@ -10,7 +10,7 @@
 @mixin respond($breakpoint) {
   @if $breakpoint == xphone {
     @media(max-width: 31em) { @content }; 
-    // overflow: hidden;
+    overflow: hidden;
   }
   @if $breakpoint == phone {
     @media(max-width: 37.5em) { @content }; 
