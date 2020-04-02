@@ -7,31 +7,26 @@
   }
 }
 
+//     0 - 600px:      Phone
+// 600 - 900px:    Tablet portrait
+// 900 - 1200px:   Tablet landscape
+// [1200 - 1800] is where our normal styles apply
+// 1800px + :      Big desktop
+
+
 @mixin respond($breakpoint) {
-  @if $breakpoint == xphone {
-    @media(max-width: 31em) { @content }; 
-    // overflow: hidden;
-  }
   @if $breakpoint == phone {
-    @media(max-width: 37.5em) { @content }; 
-    // overflow: hidden;
+    @media(max-width: 37.5em) { @content }; //600px
   }
   @if $breakpoint == tab-port {
     @media(max-width: 56.25em) { @content }; //900px
-    // overflow: hidden;
-  }
-  @if $breakpoint == tab-port-big {
-    @media(max-width: 65.25em) { @content }; //900px
   }
   @if $breakpoint ==  tab-land{
     @media(max-width: 75em) { @content }; //1200px
   }
-      @if $breakpoint ==  big {
-        @media(min-width: 90.5em) { @content }; //1800 +
-      }
-      @if $breakpoint ==  big-desktop {
-        @media(min-width: 112.5em) { @content }; //1800 +
-      }
+  @if $breakpoint ==  big-desktop {
+    @media(min-width: 112.5em) { @content }; //1800 +
+  }
 }
 
 $font: quiche-sans,sans-serif;
@@ -55,26 +50,4 @@ $color: transparent;
    -webkit-background-clip: text;
    color: $color;
    line-height: $height;
-}
-@mixin hardwareAccel() {
-	// Improve performance on mobile/tablet devices
-	// Perspective reduces blurryness of text in Chrome
-	@include prefixed(transform, perspective(1px) translateZ(0));
-}
-
-@mixin improveAntiAlias() {
-	// Improve aliasing on mobile/tablet devices
-	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-}
-
-@mixin forceBlockLevel() {
-	// Transforms need to be block-level to work
-	display: inline-block;
-	vertical-align: middle;
-}
-
-@mixin hacks() {
-	@include forceBlockLevel();
-	@include hardwareAccel();
-	@include improveAntiAlias();
 }
