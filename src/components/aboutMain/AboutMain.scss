@@ -1,16 +1,16 @@
 @import '../abstract/global.scss';
 #projects-about {
   min-height: 100vh;
-  background: url("../assets/mepool5.png");
+  background: url("../assets/newPool.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  filter: opacity(1);
+//   filter: opacity(.5);
   padding: 2rem 0 8rem 0;
 }
 .project-container-about {
-  max-width: 90vw;
+  max-width: 80vw;
   margin: 0 auto;
   color: #e0e2db;
   @include respond(phone) {
@@ -32,10 +32,10 @@
   }
 }
 .project-item-black-about {
-  background: linear-gradient($whiteShadow1, $whiteShadow1);
+  background: linear-gradient($black-med, $black-med);
   color: black;
   @include respond(phone) {
-    background: linear-gradient($whiteShadow2, $whiteShadow2);
+    background: linear-gradient($black-med1, $black-med1);
   }
   a {
     padding: 2rem;
