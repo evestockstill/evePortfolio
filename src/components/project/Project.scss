@@ -13,11 +13,11 @@
   background-clip: text;
   color: transparent;
   letter-spacing: 2px;
-  transition: all 0.2s;
-  &:hover {
-    transform: skewY(3deg) skewX(15deg) scaleX(1.1);
-    text-shadow: 0.5rem 1rem 2rem rgba($black, 0.2);
-  }
+  // transition: all 0.2s;
+  // &:hover {
+  //   transform: skewY(3deg) skewX(15deg) scaleX(1.1);
+  //   text-shadow: 0.5rem 1rem 2rem rgba($black, 0.2);
+  // }
 }
 
 #projects {
@@ -45,7 +45,7 @@
 .project-item {
   overflow: hidden;
   position: relative;
-  padding: 8rem;
+  padding: 6rem;
   #down{
     color: $orange1;
     margin-bottom: 1rem;
@@ -101,17 +101,14 @@
   height: 100%;
   transition: bottom 2s;
   padding: 2rem 1rem 1rem .5rem;
-  font-size: 2.1rem;
+  font-size: 1.9rem;
   font-weight: normal;
-  @include respond(tab-land) {
-    font-size: 2rem;
-  }
+  
   @include respond(tab-port) {
-    font-size: 1.85rem;
+    font-size: 1.75rem;
   }
   @include respond(phone) {
-color: hotpink;
-font-size: 1.6rem;
+font-size: 1.5rem;
   }
   &:hover {
     bottom: 0;
@@ -131,7 +128,7 @@ font-size: 1.6rem;
       
     }
     @include respond(tab-port) {
-      font-size: 2.6rem;
+      font-size: 2.2rem;
       margin-bottom: .3rem;
     }
     @include respond(phone) {
@@ -154,7 +151,7 @@ font-size: 1.6rem;
   }
   @include respond(tab-port) {
     padding: .7rem;
-       margin:  2rem 2rem 1.5rem 0rem;
+       margin:  1rem 2rem 1.5rem 0rem;
 
   }
   @include respond(phone) {
