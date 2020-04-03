@@ -67,6 +67,10 @@
     @include respond(tab-port) {
       font-size: 1.7rem;
     }
+    @include respond(phone) {
+      font-size: 1.6rem;
+      padding: 1rem;
+    }
   }
 }
 
@@ -83,6 +87,10 @@
     text-decoration: none;
     @include respond(tab-port) {
       font-size: 1.7rem;
+    }
+    @include respond(phone) {
+      font-size: 1.6rem;
+      padding: 1rem;
     }
   }
 }
@@ -102,13 +110,14 @@
   transition: bottom 2s;
   padding: 2rem 1rem 1rem .5rem;
   font-size: 1.9rem;
-  font-weight: normal;
+  // letter-spacing: .1rem;
+  // font-weight: normal;
   
   @include respond(tab-port) {
     font-size: 1.75rem;
   }
   @include respond(phone) {
-font-size: 1.5rem;
+font-size: 1.57rem;
   }
   &:hover {
     bottom: 0;
