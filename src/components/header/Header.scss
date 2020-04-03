@@ -7,7 +7,7 @@
     height: 42vh;
   }
   .bg-video {
-    // display: none;
+    display: none;
     position: absolute;
     filter: grayscale(1);
     top: 0;
@@ -27,42 +27,34 @@
 
   .first {
     @include text-color(6.8rem);
-    top: 18%;
+    top: 19%;
     left: 50%;
     @include respond(big-desktop) {
-      top: 16.5%;
-    }
-    @include respond(tab-land) {
-      top: 17.8%;
+      top: 17.5%;
     }
     @include respond(tab-port) {
-      top: 18.2%;
+      top: 19.4%;
     }
     @include respond(phone) {
       font-size: 5.9rem;
-      top: 19.3%;
+      top: 19.8%;
     }
   }
   .my-title {
     @include text-color(2.5rem);
-    top: 35%;
+    top: 34%;
     left: 50%;
     letter-spacing: .5rem;
     text-align: center;
     @include respond(big-desktop) {
-      top: 36.75%;
+      top: 36%;
     }
     @include respond(tab-land) {
-      top: 35%;
-      letter-spacing: .3rem;
-    }
-    @include respond(tab-port) {
       top: 33.5%;
-      letter-spacing: .4rem;
     }
+    
     @include respond(phone) {
       font-size: 1.8rem;
-
       top: 33%;
       letter-spacing: .2rem;
     }
@@ -85,7 +77,7 @@
       z-index: 5;
       text-shadow: none;
       left: 76%;
-      bottom: 66%;
+      bottom: 65.1%;
       text-align: left;
       animation: moveInLeft 1s ease-out, flicker 2.2s linear infinite;
       letter-spacing: 0.2rem;
@@ -102,8 +94,8 @@
       bottom: 65.5%;
     }
     @include respond(phone) {
-      left: 76%;
-      bottom: 70%;
+      left: 75.9%;
+      bottom: 65%;
       color: $orange1;
     }
     }
