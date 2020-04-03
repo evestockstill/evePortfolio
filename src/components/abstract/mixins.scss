@@ -34,7 +34,7 @@ $absolute: absolute;
 $background: linear-gradient(to right, $orange2, $orange1); 
 $webclip: text;
 $clip:  text;
-$space: .1rem;
+$space: .2rem;
 $height: 1;
 $color: transparent;
 
@@ -46,7 +46,7 @@ $color: transparent;
   position: $absolute;
   background: $background;
    background-clip: $clip;
-  //  letter-spacing: $space;
+   letter-spacing: $space;
    -webkit-background-clip: text;
    color: $color;
    line-height: $height;

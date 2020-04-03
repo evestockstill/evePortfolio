@@ -120,7 +120,7 @@ const Project = () => {
                 interface. Developed in a small team in a 4-day sprint. Mobile first design. Dev practices include mob, and pair
                 programing for an efficient and collaborative environment.
                  HTML/CSS, JavaScript, PostgreSQL, Component
-                architecture, Q-Unit testing
+                architecture, Q-Unit 
               </p>
               <button className='btn'>{gitFront}</button>
               <button className='btn'>{frontWeb}</button>

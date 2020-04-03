@@ -27,7 +27,7 @@
 
   .first {
     @include text-color(6.8rem);
-    top: 17%;
+    top: 18%;
     left: 50%;
     @include respond(big-desktop) {
       top: 16.5%;
@@ -45,7 +45,7 @@
   }
   .my-title {
     @include text-color(2.5rem);
-    top: 36%;
+    top: 35%;
     left: 50%;
     letter-spacing: .5rem;
     text-align: center;
@@ -64,7 +64,7 @@
       font-size: 1.8rem;
 
       top: 33%;
-      letter-spacing: .4rem;
+      letter-spacing: .2rem;
     }
   }
   .text {
@@ -84,28 +84,26 @@
       width: auto;
       z-index: 5;
       text-shadow: none;
-      left: 76.7%;
-      bottom: 67.3%;
-      // left: 78.1%;
-      // bottom: 60.3%;
+      left: 76%;
+      bottom: 66%;
       text-align: left;
       animation: moveInLeft 1s ease-out, flicker 2.2s linear infinite;
       letter-spacing: 0.2rem;
       @include respond(big-desktop) {
-        left: 78.1%;
-        bottom: 60.3%;
+        left: 75.9%;
+        bottom: 60.5%;
       }
       @include respond(tab-land) {
-      left: 78.1%;
-      bottom: 61.5%;
+      left: 75.9%;
+      bottom: 65.7%;
     }
     @include respond(tab-port) {
-      left: 78%;
-      bottom: 61.5%;
+      left: 75.9%;
+      bottom: 65.5%;
     }
     @include respond(phone) {
-      left: 76.5%;
-      bottom: 67.6%;
+      left: 76%;
+      bottom: 70%;
       color: $orange1;
     }
     }
