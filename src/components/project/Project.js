@@ -98,11 +98,11 @@ const Project = () => {
               <h1>Pet Pals</h1>
 
               <p>
-                Pet Pals is an app that connects neighbors and their dogs to
+                Pet Pals app connects neighbors and their dogs to
                 each other to exchange a quick walk or bathroom break when
                 working opposite shifts. Done in a week long sprint with mob,
-                pair, and solo coding. I worked on the overall design, styling and helped created models and routes. 
-                React, Hooks, MongoDB, socket.io, SASS, npx, Jest
+                pair, and solo coding. I worked on design, styling and helped created models and routes. 
+                React, Hooks, MongoDB, socket.io, SASS, Jest
               </p>
               <button className='btn'>{githubPet}</button>
               <button className='btn'>{petWeb}</button>
@@ -117,8 +117,7 @@ const Project = () => {
               <h1>FrontPage</h1>
               <p>
                 Front-page is a news aggregating app with a Tinderesque
-                interface. Developed in a small team over a 4-day sprint. Built
-                using a mobile first design. Dev practices include mob, and pair
+                interface. Developed in a small team in a 4-day sprint. Mobile first design. Dev practices include mob, and pair
                 programing for an efficient and collaborative environment.
                  HTML/CSS, JavaScript, PostgreSQL, Component
                 architecture, Q-Unit testing
@@ -135,8 +134,7 @@ const Project = () => {
             <div className='back-text'>
               <h1>Guess Who</h1>
               <p>
-                Guess who? Updating the old game with
-                conscientious decisions to exclude gender and race questions
+                Guess who? Updating the old game, excluding gender and race questions
                 to reflect current times. Guess to eliminate characters and win by making a correct guess.
                 Using local storage to persist user
                 data and leader boards. Responsible for the game board
