@@ -92,9 +92,11 @@ const Project = () => {
         <div className='project-container'>
           <article className='project-item project-item-black'>
             <div
-              id='toggle'
               onClick={() => setOpen(!open)}
-              className={`frontText ${open ? 'frontText__open' : 'frontText__close'}`}> 
+              className={`frontText ${
+                open ? 'frontText__open' : 'frontText__close'
+              }`}
+            >
               {down}
               <h1>Pet Pals</h1>
             </div>
@@ -113,7 +115,12 @@ const Project = () => {
             </div>
           </article>
           <article className='project-item project-item-white'>
-            <div className='frontText'>
+            <div
+              onClick={() => setOpen(!open)}
+              className={`frontText ${
+                open ? 'frontText__open' : 'frontText__close'
+              }`}
+            >
               {down}
               <h1>FrontPage</h1>
             </div>
@@ -131,7 +138,12 @@ const Project = () => {
             </div>
           </article>
           <article className='project-item project-item-black'>
-            <div className='frontText'>
+            <div
+              onClick={() => setOpen(!open)}
+              className={`frontText ${
+                open ? 'frontText__open' : 'frontText__close'
+              }`}
+            >
               {down}
               <h1>Guess Who</h1>
             </div>
@@ -150,7 +162,12 @@ const Project = () => {
             </div>
           </article>
           <article className='project-item project-item-white'>
-            <div className='frontText'>
+            <div
+              onClick={() => setOpen(!open)}
+              className={`frontText ${
+                open ? 'frontText__open' : 'frontText__close'
+              }`}
+            >
               {down}
               <h1>Music Search</h1>
             </div>

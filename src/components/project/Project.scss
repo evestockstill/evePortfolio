@@ -172,15 +172,16 @@ font-size: 1.57rem;
 }
 .project-item:hover .frontText {
   transform: translateY(-23rem);
+  @include respond(tab-port) {
   &__open {
   transform: translateY(-23rem);
-
+  }
+   &__close {
+  transform: translateY(0rem);
+  }
   }
 }
 .project-item:hover .back-text {
   bottom: 0;
-  &__close {
-  bottom: 0;
-  }
 }
 
