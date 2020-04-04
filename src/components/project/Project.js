@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Project.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import pet from '../assets/pattern.jpeg';
 
 
 const Project = () => {
+  const [open, setOpen] = useState(false);
   const githubPet = (
     <a
       target='_self'
@@ -90,7 +91,10 @@ const Project = () => {
         </div>
         <div className='project-container'>
           <article className='project-item project-item-black'>
-            <div className='front-text'>
+            <div
+              id='toggle'
+              onClick={() => setOpen(!open)}
+              className={`frontText ${open ? 'frontText__open' : 'frontText__close'}`}> 
               {down}
               <h1>Pet Pals</h1>
             </div>
@@ -98,18 +102,18 @@ const Project = () => {
               <h1>Pet Pals</h1>
 
               <p>
-                Pet Pals app connects neighbors and their dogs to
-                each other to exchange a quick walk or bathroom break when
-                working opposite shifts. Done in a week long sprint with mob,
-                pair, and solo coding. I worked on design, styling and helped created models and routes. 
-                React, Hooks, MongoDB, socket.io, SASS, Jest
+                Pet Pals app connects neighbors and their dogs to each other to
+                exchange a quick walk or bathroom break when working opposite
+                shifts. Done in a week long sprint with mob, pair, and solo
+                coding. I worked on design, styling and helped created models
+                and routes. React, Hooks, MongoDB, socket.io, SASS, Jest
               </p>
               <button className='btn'>{githubPet}</button>
               <button className='btn'>{petWeb}</button>
             </div>
           </article>
           <article className='project-item project-item-white'>
-            <div className='front-text'>
+            <div className='frontText'>
               {down}
               <h1>FrontPage</h1>
             </div>
@@ -117,28 +121,28 @@ const Project = () => {
               <h1>FrontPage</h1>
               <p>
                 Front-page is a news aggregating app with a Tinderesque
-                interface. Developed in a small team in a 4-day sprint. Mobile first design. Dev practices include mob, and pair
-                programing for an efficient and collaborative environment.
-                 HTML/CSS, JavaScript, PostgreSQL, Component
-                architecture, Q-Unit 
+                interface. Developed in a small team in a 4-day sprint. Mobile
+                first design. Dev practices include mob, and pair programing for
+                an efficient and collaborative environment. HTML/CSS,
+                JavaScript, PostgreSQL, Component architecture, Q-Unit
               </p>
               <button className='btn'>{gitFront}</button>
               <button className='btn'>{frontWeb}</button>
             </div>
           </article>
           <article className='project-item project-item-black'>
-            <div className='front-text'>
+            <div className='frontText'>
               {down}
               <h1>Guess Who</h1>
             </div>
             <div className='back-text'>
               <h1>Guess Who</h1>
               <p>
-                Guess who? Updating the old game, excluding gender and race questions
-                to reflect current times. Guess to eliminate characters and win by making a correct guess.
-                Using local storage to persist user
-                data and leader boards. Responsible for the game board
-                animations and styling. Vanilla JavaScript,
+                Guess who? Updating the old game, excluding gender and race
+                questions to reflect current times. Guess to eliminate
+                characters and win by making a correct guess. Using local
+                storage to persist user data and leader boards. Responsible for
+                the game board animations and styling. Vanilla JavaScript,
                 HTML/CSS
               </p>
               <button className='btn'>{gitGuess}</button>
@@ -146,7 +150,7 @@ const Project = () => {
             </div>
           </article>
           <article className='project-item project-item-white'>
-            <div className='front-text'>
+            <div className='frontText'>
               {down}
               <h1>Music Search</h1>
             </div>
@@ -154,10 +158,10 @@ const Project = () => {
               <h1>Music Search</h1>
               <p>
                 Music Search is a app that lets you search music artist by name.
-                Search through the artist to find albums. Choose album to find songs, and choose song to
-                discover lyrics. Functionality created in a team of 3 in a 2 day
-                sprint. I used another 2 days to design site. 
-                React, custom Hooks, REST APIs, and PostCSS
+                Search through the artist to find albums. Choose album to find
+                songs, and choose song to discover lyrics. Functionality created
+                in a team of 3 in a 2 day sprint. I used another 2 days to
+                design site. React, custom Hooks, REST APIs, and PostCSS
               </p>
               <button className='btn'>{githubMusic}</button>
               <button className='btn'>{musicWeb}</button>

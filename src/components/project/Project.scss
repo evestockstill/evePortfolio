@@ -87,7 +87,7 @@
   }
 }
 
-.front-text {
+.frontText {
   text-align: center;
   transition: transform 2s;
   font-size: 3.5rem;
@@ -170,10 +170,17 @@ font-size: 1.57rem;
     background-color: $orange3;
   }
 }
-.project-item:hover .front-text {
+.project-item:hover .frontText {
   transform: translateY(-23rem);
+  &__open {
+  transform: translateY(-23rem);
+
+  }
 }
 .project-item:hover .back-text {
   bottom: 0;
+  &__close {
+  bottom: 0;
+  }
 }
 
