@@ -1,12 +1,7 @@
 @import '../abstract/global.scss';
 #projects-about {
   min-height: 100vh;
-  background: url("../assets/newPool.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-//   filter: opacity(.5);
+  background: url("../assets/newPool.png")center/cover fixed no-repeat;
   padding: 2rem 0 8rem 0;
 }
 .project-container-about {

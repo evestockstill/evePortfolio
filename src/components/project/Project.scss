@@ -5,28 +5,20 @@
 }
 .title-text {
   text-align: center;
-  font-size: 4em;
+  font-size: 4rem;
   text-transform: uppercase;
-  font-weight: 700;
-  background-image: linear-gradient(to right, $orange2, $orange1);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  letter-spacing: 2px;
-  // transition: all 0.2s;
-  // &:hover {
-  //   transform: skewY(3deg) skewX(15deg) scaleX(1.1);
-  //   text-shadow: 0.5rem 1rem 2rem rgba($black, 0.2);
-  // }
+  font-weight: $weight;
+  background-image: $background;
+  -webkit-background-clip: $clip;
+  background-clip: $clip;
+  color: $color;
+  letter-spacing: $space;
+  
 }
 
 #projects {
   min-height: 100vh;
-  background: url("../assets/person.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
+  background: url("../assets/person.png")center/cover fixed no-repeat;
   padding: 2rem 0 8rem 0;
 }
 
