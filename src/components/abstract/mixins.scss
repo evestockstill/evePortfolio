@@ -28,7 +28,7 @@
 }
 
 $font: 'Alegreya Sans SC', sans-serif;
-$font-weight: 700;
+$weight: 700;
 $transform: translate(-50%, -50%);
 $absolute: absolute;
 $background: linear-gradient(to right, $orange2, $orange1); 
@@ -41,13 +41,13 @@ $color: transparent;
 @mixin text-color ($size){
   font-family: $font;
   font-size: $size;
-  font-weight: $font-weight;
+  weight: $weight;
   transform: $transform;
   position: $absolute;
   background: $background;
    background-clip: $clip;
    letter-spacing: $space;
-   -webkit-background-clip: text;
+   -webkit-background-clip: $webclip;
    color: $color;
    line-height: $height;
 }

@@ -3,7 +3,7 @@ nav {
 display: flex;
 justify-content: flex-end;
 flex-direction: row;
-margin-right: 1rem;
+padding-right: 1rem;
 background-color: black;
 @include respond(phone) {
   justify-content: center;
