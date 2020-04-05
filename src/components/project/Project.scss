@@ -1,4 +1,4 @@
-@import "../abstract/global.scss";
+@import '../abstract/global.scss';
 
 .title {
   margin: 4rem 0;
@@ -13,12 +13,11 @@
   background-clip: $clip;
   color: $color;
   letter-spacing: $space;
-  
 }
 
 #projects {
   min-height: 100vh;
-  background: url("../assets/person.png")center/cover fixed no-repeat;
+  background: url('../assets/person.png') center/cover fixed no-repeat;
   padding: 2rem 0 8rem 0;
 }
 
@@ -38,7 +37,7 @@
   overflow: hidden;
   position: relative;
   padding: 6rem;
-  #down{
+  #down {
     color: $orange1;
     margin-bottom: 1rem;
     font-size: 6rem;
@@ -91,7 +90,7 @@
   text-align: center;
   transition: transform 2s;
   font-size: 3.5rem;
-    letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
 }
 .back-text {
   position: absolute;
@@ -100,16 +99,16 @@
   margin: 0 auto;
   height: 100%;
   transition: bottom 2s;
-  padding: 2rem 1rem 1rem .5rem;
+  padding: 2rem 1rem 1rem 0.5rem;
   font-size: 1.9rem;
   // letter-spacing: .1rem;
   // font-weight: normal;
-  
+
   @include respond(tab-port) {
     font-size: 1.75rem;
   }
   @include respond(phone) {
-font-size: 1.57rem;
+    font-size: 1.57rem;
   }
   &:hover {
     bottom: 0;
@@ -117,48 +116,45 @@ font-size: 1.57rem;
   h1 {
     margin-bottom: 1rem;
     font-size: 3rem;
-    letter-spacing: .2rem;
+    letter-spacing: 0.2rem;
     text-transform: uppercase;
     color: $orange1;
     @include respond(big-desktop) {
       font-size: 3.3rem;
     }
     @include respond(tab-land) {
-      margin-bottom: .5rem;
+      margin-bottom: 0.5rem;
       font-size: 2.7rem;
-      
     }
     @include respond(tab-port) {
       font-size: 2.2rem;
-      margin-bottom: .3rem;
+      margin-bottom: 0.3rem;
     }
     @include respond(phone) {
-      margin-bottom: .1rem;
+      margin-bottom: 0.1rem;
       font-size: 1.8rem;
     }
-    
   }
 }
 .back-text button {
-  margin:  2.5rem 2rem 1.5rem 0rem;
+  margin: 2.5rem 2rem 1.5rem 0rem;
   padding: 1rem;
   background: transparent;
   border: 2px solid $orange1;
   @include respond(big-desktop) {
-     margin:  2.2rem 2rem 2.7rem 0rem;
+    margin: 2.2rem 2rem 2.7rem 0rem;
   }
   @include respond(tab-land) {
-    padding: .8rem;
+    padding: 0.8rem;
   }
   @include respond(tab-port) {
-    padding: .7rem;
-       margin:  1rem 2rem 1.5rem 0rem;
-
+    padding: 0.7rem;
+    margin: 1rem 2rem 1.5rem 0rem;
   }
   @include respond(phone) {
-    padding: .5rem;
+    padding: 0.5rem;
     margin: 1rem 0.5rem 0.1rem 0.2rem;
-  
+
     &:hover {
       background: $orange1;
     }
@@ -173,15 +169,11 @@ font-size: 1.57rem;
 .project-item:hover .frontText {
   transform: translateY(-23rem);
   @include respond(tab-port) {
-  &__open {
-  transform: translateY(-23rem);
-  }
-   &__close {
-  // transform: translateY(0rem);
-  }
+    &__open {
+      transform: translateY(-23rem);
+    }
   }
 }
 .project-item:hover .back-text {
   bottom: 0;
 }
-

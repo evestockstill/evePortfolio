@@ -1,0 +1,33 @@
+@import '../abstract/global.scss';
+.slider__wrap {
+   height: 20rem;
+   width: 60vw;
+   background-color: $orange1;
+}
+.icons {
+    color: black;
+    font-size: 7rem;
+    padding: 0 .5rem 0 .5rem;
+}
+#icon7, #icon8, #icon9{
+    height: 5.5rem;
+    width: 5.5rem;
+     background-color: $orange1;
+       
+
+}
+#icon11 {
+     height: 6.5rem;
+    width: 6.5rem;
+     background-color: $orange1;
+       
+}
+  #icon10{
+      height: 7.5rem;
+    width: 7.5rem;
+     background: $orange1;
+ }
+.slider {
+       padding: 1rem .5rem 1rem .5rem;
+
+}

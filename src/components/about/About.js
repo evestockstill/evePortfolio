@@ -6,6 +6,7 @@ import pool from '../assets/mepool5.png';
 import isla from '../assets/islagrass.png';
 import mp4 from '../assets/glitter.mp4';
 import AboutMain from '../aboutMain/AboutMain';
+import Slider from '../slider/Slider';
 
 const AboutMe = () => {
   const returnHome = (
@@ -29,7 +30,8 @@ const AboutMe = () => {
         </div>
         <h1 className='greeting'>Hello</h1>
       </header>
-      <AboutMain />
+      {/* <AboutMain /> */}
+      <Slider />
     </>
   );
 };
