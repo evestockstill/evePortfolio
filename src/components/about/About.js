@@ -29,9 +29,9 @@ const AboutMe = () => {
           </video>
         </div> */}
         <h1 className='greeting'>Hello</h1>
-        <Slider />
       </header>
       <AboutMain />
+        <Slider />
       {/* <Slider /> */}
     </>
   );

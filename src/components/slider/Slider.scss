@@ -1,8 +1,8 @@
 @import "../abstract/global.scss";
 
-.wrapper {
+.slide__container {
     width: 100vw;
-    height: 40vh;
+    height: 20vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -55,6 +55,6 @@
         height: 10rem;
         display: flex;
         align-items: center;
-        animation: iconSlide 15s linear infinite;
+        animation: iconSlide 45s linear infinite;
     }
 }

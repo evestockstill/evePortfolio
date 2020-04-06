@@ -56,7 +56,7 @@ const Slider = () => {
 
   return (
     <>
-      <div className='wrapper'>
+      <div className='slide__container'>
         <div className='slider__wrap'>
           <div className='img__wrap'>
             {icon1}
