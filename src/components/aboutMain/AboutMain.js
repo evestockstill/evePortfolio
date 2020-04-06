@@ -50,8 +50,7 @@ const AboutMain = () => {
                               to parks, hiking trails, and camp trips. 
 
               </p>
-              {/* <button className='btn'>{githubPet}</button>
-              <button className='btn'>{petWeb}</button> */}
+              
             </div>
           </article>
           

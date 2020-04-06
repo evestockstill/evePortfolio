@@ -1,7 +1,7 @@
 @import "../abstract/global.scss";
 
 .hero {
-  // height: 5vh;
+  height: 5vh;
   // border-bottom: 0.5rem solid black;
   // margin-top: 1rem;
   // // background-color: D4D4D4;
@@ -23,106 +23,109 @@
   //     }
   //   }
   // }
-  p{
-    // @include text-color(8.3rem);
-    position: absolute;
-    top: 2%;
-    left: 2%;
-    transition: all 0.2s;
+  // p{
+  //   // @include text-color(8.3rem);
+  //   position: absolute;
+  //   top: 2%;
+  //   left: 2%;
+  //   transition: all 0.2s;
 
     @include respond(phone) {
       font-size: 6.5rem;
-    }
+    // }
   }
 }
-#about-title-text {
-  font-size: 2.5rem;
-  padding-top: 3.5rem;
-  @include respond(phone) {
-      font-size: 2rem;
-    }
-}
-  // .about-wrapper {
-  //   display: flex;
-  //   justify-content: center;
-  //   // max-width: 100%;
-  //   margin: 1rem auto;
-  // }
-.heading-one {
-  @include text-color(3.5rem);
-}
-.section-me {
-  padding: 15rem 0;
-  position: relative;
+// #about-title-text {
+//   font-size: 2.5rem;
+//   padding-top: 3.5rem;
+//   @include respond(phone) {
+//       font-size: 2rem;
+//     }
+// }
+//   // .about-wrapper {
+//   //   display: flex;
+//   //   justify-content: center;
+//   //   // max-width: 100%;
+//   //   margin: 1rem auto;
+//   // }
+// .heading-one {
+//   @include text-color(3.5rem);
+// }
+// .section-me {
+//   padding: 15rem 0;
+//   position: relative;
 
-  @include respond(tab-port) {
-    padding: 10rem 0;
-  }
-}
+//   @include respond(tab-port) {
+//     padding: 10rem 0;
+//   }
+// }
 
-  .about {
-  width: 75%;
-  margin: 10rem auto;
-  box-shadow: 0 3rem 6rem rgba(black, 0.1);
-  background: rgba(white, .60);
-  border-radius: 3px;
-  padding: 6rem;
-  padding-left: 8rem;
-  font-size: 1.6rem;
-  transform: skewX(-12deg);
+//   .about {
+//   width: 75%;
+//   margin: 10rem auto;
+//   box-shadow: 0 3rem 6rem rgba(black, 0.1);
+//   background: rgba(white, .60);
+//   border-radius: 3px;
+//   padding: 6rem;
+//   padding-left: 8rem;
+//   font-size: 1.6rem;
+//   transform: skewX(-12deg);
   
-  &__shape {
-    width: 15rem;
-    height: 15rem;
-    float: left;
-    -webkit-shape-outside: circle(50% at 50% 50%);
-    shape-outside: circle(50% at 50% 50%);
-    -webkit-clip-path: circle(50% at 50% 50%);
-    clip-path: circle(50% at 50% 50%);
-    transform: translateX(-2rem) skewX(12deg);
-    position: relative;
-  }
-  &__img {
-    height: 100%;
-    transform: translateX(-4rem) scaleX(1.2);
-    backface-visibility: hidden;
-    transition: all .5s;
-    // object-fit: cover;
+//   &__shape {
+//     width: 15rem;
+//     height: 15rem;
+//     float: left;
+//     -webkit-shape-outside: circle(50% at 50% 50%);
+//     shape-outside: circle(50% at 50% 50%);
+//     -webkit-clip-path: circle(50% at 50% 50%);
+//     clip-path: circle(50% at 50% 50%);
+//     transform: translateX(-2rem) skewX(12deg);
+//     position: relative;
+//   }
+//   &__img {
+//     height: 100%;
+//     transform: translateX(-4rem) scaleX(1.2);
+//     backface-visibility: hidden;
+//     transition: all .5s;
+//     // object-fit: cover;
 
-  }
-  &__text {
-    margin-bottom: 3rem;
-    left: 50%;
-    top: -10%;
-    color: $orange1;
-  }
+//   }
+//   &__text {
+//     margin-bottom: 3rem;
+//     left: 50%;
+//     top: -10%;
+//     color: $orange1;
+//   }
   
-  &__caption {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 20%);
-    color: white;
-    text-transform: uppercase;
-    font-size: 1.7rem;
-    text-align: center;
-    opacity: 0;
-    transition: all .5s;
-    backface-visibility: hidden;
+//   &__caption {
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, 20%);
+//     color: white;
+//     text-transform: uppercase;
+//     font-size: 1.7rem;
+//     text-align: center;
+//     opacity: 0;
+//     transition: all .5s;
+//     backface-visibility: hidden;
     
-  }
-  &:hover &__caption {
-    opacity: 1;
-    transform: translate(-50%, -50%);
-  }
-  &:hover &__img {
- transform: translateX(-4rem) scaleX(1);
- filter: blur(3px) brightness(80%);
-  }
-}
+//   }
+//   &:hover &__caption {
+//     opacity: 1;
+//     transform: translate(-50%, -50%);
+//   }
+//   &:hover &__img {
+//  transform: translateX(-4rem) scaleX(1);
+//  filter: blur(3px) brightness(80%);
+//   }
+// }
 .faback1 {
   display: inline;
   color: $orange1;
-  margin: 0.5rem 0 0.1rem 1.5rem;
-  font-size: 1.7rem;
+  position: absolute;
+  // padding-left: 1.5rem;
+  left: 2%;
+  top: 2%;
+  font-size: 2.3rem;
 }
