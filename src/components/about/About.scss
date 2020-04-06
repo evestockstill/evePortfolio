@@ -1,12 +1,12 @@
 @import "../abstract/global.scss";
 
 .hero {
-  height: 3vh;
-  border-bottom: 0.5rem solid black;
-  margin-top: 1rem;
-  background-color: D4D4D4;
+  // height: 5vh;
+  // border-bottom: 0.5rem solid black;
+  // margin-top: 1rem;
+  // // background-color: D4D4D4;
   // .bg-video1 {
-  //   display: none;
+  //   // display: none;
   //   filter: grayscale(1);
   //   top: 0;
   //   left: 0;
@@ -23,10 +23,11 @@
   //     }
   //   }
   // }
-  .greeting {
-    @include text-color(8.3rem);
-    top: 10%;
-    left: 50%;
+  p{
+    // @include text-color(8.3rem);
+    position: absolute;
+    top: 2%;
+    left: 2%;
     transition: all 0.2s;
 
     @include respond(phone) {

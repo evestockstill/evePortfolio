@@ -1,5 +1,4 @@
 import React from 'react';
-import pool from '../assets/newPool.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import './AboutMain.scss';

@@ -1,22 +1,27 @@
-@import '../abstract/global.scss';
+@import "../abstract/global.scss";
 #projects-about {
-  min-height: 0vh;
-  // width: auto;
-  
-  background: url("../assets/evepool.png")center/cover fixed no-repeat;
-  // opacity: .5;
-  padding: 2rem 0 8rem 0;
-  
-  @include respond(phone) {
-    background-size: contain;
-    
+  min-height: 100vh;
 
+  background: url("../assets/retouch.png") center/cover fixed no-repeat;
+  // opacity: .9;
+  padding: 2rem 0 2rem 0;
+  &:hover {
+    // opacity: 0.6;
+  }
+  @include respond(tab-port){
+    background-size: contain;
+    min-height: 50vh;
+    
   }
 }
 .project-container-about {
-  max-width: 80vw;
+  max-width: 90vw;
   margin: 0 auto;
   color: D4D4D4;
+  @include respond(tab-port) {
+    max-width: 100vw;
+    padding-top: 18rem;
+  }
   @include respond(phone) {
     max-width: 100vw;
     padding-top: 22.5rem;
@@ -25,11 +30,11 @@
 .project-item-about {
   overflow: hidden;
   position: relative;
-  padding:  15rem;
+  padding: 15rem;
   @include respond(phone) {
-      padding: 8rem;
+    padding: 8rem;
   }
-  
+
   .fafa {
     color: $orange1;
     margin-bottom: 3.5rem;
@@ -37,48 +42,18 @@
   }
 }
 .project-item-black-about {
-  background: linear-gradient($black-med, $black-med);
-  color: white;
-  @include respond(phone) {
-    background: linear-gradient($black-med1, $black-med1);
-  }
-  a {
-    padding: 5rem;
-    font-size: 2rem;
+  &:hover {
+    background: linear-gradient($black-med, $black-med);
     color: white;
-    margin: 1rem;
-    text-decoration: none;
     @include respond(phone) {
-      // font-size: 1.3rem;
-      padding: 1rem;
-      margin: 0.5rem;
+      background: linear-gradient($black-med1, $black-med1);
     }
-    h1 {
-    padding-bottom: 7rem;
-    font-size: 3rem;
-    letter-spacing: 0.2rem;
-    text-transform: uppercase;
-    color: $orange1;
-    @include respond(big-desktop) {
-      font-size: 3.3rem;
-    }
-    @include respond(tab-land) {
-      margin-bottom: 0.5rem;
-      font-size: 2.7rem;
-    }
-    @include respond(tab-port) {
-      font-size: 2.2rem;
-      margin-bottom: 0.3rem;
-    }
-    @include respond(phone) {
-      margin-bottom: 0.1rem;
-      font-size: 1.8rem;
-    }
-  }
   }
 }
+// }
 .front-text-about {
   text-align: center;
+  color: white;
   transition: transform 2s;
   font-size: 3.5rem;
   @include respond(phone) {
@@ -90,12 +65,17 @@
   bottom: -44.4em;
   width: 75%;
   margin: 0 auto;
+  color: transparent;
   height: 100%;
   transition: bottom 2s;
-  padding: 1rem 0;
+  padding: 2rem 6rem 0rem 0rem;
   font-size: 2.2rem;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
   font-weight: 600;
+  transition: 1s all ease;
+  &:hover {
+  color: #D4D4D4;
+  }
   @include respond(phone) {
     padding: 0.8rem 0;
     font-size: 0.9rem;
@@ -104,12 +84,12 @@
   }
   @include respond(tab-port) {
     font-size: 1.7rem;
-    padding: .5rem 0;
+    padding: 0.5rem 0;
     font-weight: normal;
   }
   @include respond(tab-port-big) {
     font-size: 1.5rem;
-    padding: .5rem 0;
+    padding: 0.5rem 0;
     font-weight: normal;
   }
 

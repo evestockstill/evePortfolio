@@ -2,7 +2,6 @@ import React from 'react';
 import './About.scss';
 import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import pool from '../assets/mepool5.png';
 import mp4 from '../assets/glitter.mp4';
 import AboutMain from '../aboutMain/AboutMain';
 import Slider from '../slider/Slider';
@@ -19,18 +18,21 @@ const AboutMe = () => {
   );
   return (
     <>
-      <p>{returnHome}</p>
+      {/* <p>{returnHome}</p> */}
+
       <header className='hero'>
-        {/* <div className='bg-video1'>
-          <video className='bg-video1__content' autoPlay muted loop>
+        <div className='bg-video1'>
+          {/* <video className='bg-video1__content' autoPlay muted loop>
             <source src={mp4} type='video/mp4' alt='video' />
             your browser not supported
-          </video>
-        </div> */}
+          </video> */}
+        </div>
+        <p>{returnHome}</p>
+
         {/* <h1 className='greeting'>Hello</h1> */}
       </header>
       <AboutMain />
-        <Slider />
+      <Slider />
       {/* <Slider /> */}
     </>
   );
