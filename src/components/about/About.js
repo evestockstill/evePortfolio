@@ -6,6 +6,7 @@ import pool from '../assets/mepool5.png';
 import isla from '../assets/islagrass.png';
 import mp4 from '../assets/glitter.mp4';
 import AboutMain from '../aboutMain/AboutMain';
+import Slider from '../slider/Slider';
 
 const AboutMe = () => {
   const returnHome = (
@@ -21,15 +22,17 @@ const AboutMe = () => {
     <>
       <p>{returnHome}</p>
       <header className='hero'>
-        <div className='bg-video1'>
+        {/* <div className='bg-video1'>
           <video className='bg-video1__content' autoPlay muted loop>
             <source src={mp4} type='video/mp4' alt='video' />
             your browser not supported
           </video>
-        </div>
+        </div> */}
         <h1 className='greeting'>Hello</h1>
+        <Slider />
       </header>
       <AboutMain />
+      {/* <Slider /> */}
     </>
   );
 };

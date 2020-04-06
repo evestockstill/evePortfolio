@@ -1,27 +1,27 @@
 @import "../abstract/global.scss";
 
 .hero {
-  height: 15vh;
+  height: 30vh;
   border-bottom: 0.5rem solid $orange1;
   margin-top: 1rem;
-  .bg-video1 {
-    display: none;
-    filter: grayscale(1);
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: auto;
-    z-index: -1;
-    background-blend-mode: screen;
-    &__content {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      @include respond(phone) {
-        display: none;
-      }
-    }
-  }
+  // .bg-video1 {
+  //   display: none;
+  //   filter: grayscale(1);
+  //   top: 0;
+  //   left: 0;
+  //   height: 100%;
+  //   width: auto;
+  //   z-index: -1;
+  //   background-blend-mode: screen;
+  //   &__content {
+  //     width: 100%;
+  //     height: 100%;
+  //     object-fit: cover;
+  //     @include respond(phone) {
+  //       display: none;
+  //     }
+  //   }
+  // }
   .greeting {
     @include text-color(8.3rem);
     top: 10%;
