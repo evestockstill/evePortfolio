@@ -101,9 +101,6 @@
   transition: bottom 2s;
   padding: 2rem 1rem 1rem 0.5rem;
   font-size: 1.9rem;
-  // letter-spacing: .1rem;
-  // font-weight: normal;
-
   @include respond(tab-port) {
     font-size: 1.75rem;
   }

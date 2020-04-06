@@ -26,7 +26,6 @@
         position: relative;
         background-color: D4D4D4;
         overflow: hidden;
-        // box-shadow: 0 8px 15px -10px $whiteShadow2;
         &::before,
         &::after {
             height: 10rem;
@@ -51,11 +50,6 @@
         font-size: 6rem;
         height: 5.5rem;
         width: 5.5rem;
-        // @include respond(phone) {
-        //    font-size: 4rem;
-        // height: 3.5rem;
-        // width: 3.5rem; 
-        // }
     }
    
     .icon-title {

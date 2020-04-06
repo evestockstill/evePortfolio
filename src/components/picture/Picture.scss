@@ -75,9 +75,7 @@
             z-index: 1;
         }
 }
-
 .my__article-wrapper {
-// bottom: 10%;    
      display: flex;
     justify-content: center;
     align-items: center;
@@ -85,11 +83,9 @@
     padding: 35rem 6rem 3rem 6rem; 
     @include respond (tab-port) {
     padding: 28rem 4rem 3rem 4rem; 
-
     }
     @include respond (phone) {
     padding: 20rem 3rem 3rem 3rem; 
-
     }
   h1 {
       text-align: center;

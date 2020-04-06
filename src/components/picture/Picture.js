@@ -31,7 +31,6 @@ const Picture = () => {
           </p>
         </article>
       </div>
-      {/* <div className='reflectionDog'></div> */}
     </>
   );
 };

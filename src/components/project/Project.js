@@ -102,7 +102,6 @@ const Project = () => {
             </div>
             <div className='back-text'>
               <h1>Pet Pals</h1>
-
               <p>
                 Pet Pals app connects neighbors and their dogs to each other to
                 exchange a quick walk or bathroom break when working opposite
