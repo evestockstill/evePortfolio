@@ -1,11 +1,11 @@
 import React from 'react';
 import './Slider.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import icon7 from '../assets/nelify.png';
-import icon8 from '../assets/newmongo.png';
-import icon9 from '../assets/jest.png';
-import icon10 from '../assets/vs.png';
-import icon11 from '../assets/shell.png';
+import icon7 from '../assets/net.svg';
+import icon8 from '../assets/mongo.svg';
+import icon9 from '../assets/jest.svg';
+import icon10 from '../assets/vs.svg';
+import icon11 from '../assets/shell.svg';
 
 const Slider = () => {
   const icon1 = (
@@ -54,54 +54,58 @@ const Slider = () => {
   const icon1010 = <img id='icon10' className='icons' src={icon10}></img>;
   const icon1111 = <img id='icon11' className='icons' src={icon11}></img>;
 
-  //   const icon8 = (
-  //     <FontAwesomeIcon
-  //       icon={['fab', 'css3-alt']}
-  //       className='icons'
-  //       id='icon2'
-  //     ></FontAwesomeIcon>
-  //   );
-  //   const icon9 = (
-  //     <FontAwesomeIcon
-  //       icon={['fab', 'css3-alt']}
-  //       className='icons'
-  //       id='icon2'
-  //     ></FontAwesomeIcon>
-  //   );
-  //   const icon10 = (
-  //     <FontAwesomeIcon
-  //       icon={['fab', 'css3-alt']}
-  //       className='icons'
-  //       id='icon2'
-  //     ></FontAwesomeIcon>
-  //   );
-
   return (
     <>
       <div className='wrapper'>
         <div className='slider__wrap'>
-          {icon1}
-          <span className='icon-title'>github</span>
-          {icon2}
-          <span className='icon-title'>React</span>
-          {icon3}
-          <span className='icon-title'>Node js</span>
-          {icon4}
-          <span className='icon-title'>JavaScript</span>
-          {icon5}
-          <span className='icon-title'>Sass</span>
-          {icon6}
-          <span className='icon-title'>CSS</span>
-          {icon77}
-          <span className='icon-title'>Netlify</span>
-          {icon88}
-          <span className='icon-title'>mongoDb</span>
-          {icon99}
-          <span className='icon-title'>Jest</span>
-          {icon1010}
-          <span className='icon-title'>VS Code</span>
-          {icon1111}
-          <span className='icon-title'>Shell</span>
+          <div className='img__wrap'>
+            {icon1}
+            <span className='icon-title'>github</span>
+            {icon2}
+            <span className='icon-title'>React</span>
+            {icon77}
+            <span className='icon-title'>Netlify</span>
+            {icon4}
+            <span className='icon-title'>JavaScript</span>
+            {icon99}
+            <span className='icon-title'>Jest</span>
+            {icon6}
+            <span className='icon-title'>CSS</span>
+            {icon3}
+            <span className='icon-title'>Node js</span>
+            {icon88}
+            <span className='icon-title'>mongoDb</span>
+            {icon5}
+            <span className='icon-title'>Sass</span>
+            {icon1010}
+            <span className='icon-title'>VS Code</span>
+            {icon1111}
+            <span className='icon-title'>Shell</span>
+          </div>
+          <div className='img__wrap'>
+            {icon1}
+            <span className='icon-title'>github</span>
+            {icon2}
+            <span className='icon-title'>React</span>
+            {icon77}
+            <span className='icon-title'>Netlify</span>
+            {icon4}
+            <span className='icon-title'>JavaScript</span>
+            {icon99}
+            <span className='icon-title'>Jest</span>
+            {icon6}
+            <span className='icon-title'>CSS</span>
+            {icon3}
+            <span className='icon-title'>Node js</span>
+            {icon88}
+            <span className='icon-title'>mongoDb</span>
+            {icon5}
+            <span className='icon-title'>Sass</span>
+            {icon1010}
+            <span className='icon-title'>VS Code</span>
+            {icon1111}
+            <span className='icon-title'>Shell</span>
+          </div>
         </div>
       </div>
     </>

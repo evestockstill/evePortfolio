@@ -22,16 +22,17 @@ const AboutMe = () => {
     <>
       <p>{returnHome}</p>
       <header className='hero'>
-        <div className='bg-video1'>
+        {/* <div className='bg-video1'>
           <video className='bg-video1__content' autoPlay muted loop>
             <source src={mp4} type='video/mp4' alt='video' />
             your browser not supported
           </video>
-        </div>
+        </div> */}
         <h1 className='greeting'>Hello</h1>
+        <Slider />
       </header>
-      {/* <AboutMain /> */}
-      <Slider />
+      <AboutMain />
+      {/* <Slider /> */}
     </>
   );
 };
