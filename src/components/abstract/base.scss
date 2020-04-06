@@ -36,7 +36,8 @@ html {
 body {
     box-sizing: border-box;
      font-family: 'Alegreya Sans SC', sans-serif;
-     background-color: black;
+  background-color: D4D4D4;
+    //  background-color: black;
     padding: 1rem;
     @include respond(tab-port) {
         padding: 0;

@@ -3,7 +3,6 @@ import './About.scss';
 import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import pool from '../assets/mepool5.png';
-import isla from '../assets/islagrass.png';
 import mp4 from '../assets/glitter.mp4';
 import AboutMain from '../aboutMain/AboutMain';
 import Slider from '../slider/Slider';
@@ -28,7 +27,7 @@ const AboutMe = () => {
             your browser not supported
           </video>
         </div> */}
-        <h1 className='greeting'>Hello</h1>
+        {/* <h1 className='greeting'>Hello</h1> */}
       </header>
       <AboutMain />
         <Slider />

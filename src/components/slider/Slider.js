@@ -56,6 +56,7 @@ const Slider = () => {
 
   return (
     <>
+      <h4 className='slide__Title'>What I Know</h4>
       <div className='slide__container'>
         <div className='slider__wrap'>
           <div className='img__wrap'>
