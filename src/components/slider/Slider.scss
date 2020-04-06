@@ -1,8 +1,18 @@
 @import "../abstract/global.scss";
-
-.wrapper {
+.slide__Title {
+    text-align: center;
+  font-size: 3rem;
+  text-transform: uppercase;
+  background-image: $background;
+  -webkit-background-clip: $clip;
+  background-clip: $clip;
+  color: $color;
+  letter-spacing: $space;
+  padding-top: 1rem;
+}
+.slide__container {
     width: 100vw;
-    height: 40vh;
+    height: 20vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -14,7 +24,7 @@
         width: 62vw;
         display: flex;
         position: relative;
-        background-color: black;
+        background-color: D4D4D4;
         overflow: hidden;
         // box-shadow: 0 8px 15px -10px $whiteShadow2;
         &::before,
@@ -55,6 +65,6 @@
         height: 10rem;
         display: flex;
         align-items: center;
-        animation: iconSlide 15s linear infinite;
+        animation: iconSlide 45s linear infinite;
     }
 }

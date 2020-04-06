@@ -6,6 +6,7 @@ import { faUser, faAngleDown, faAddressCard, faBackward } from '@fortawesome/fre
 import  Resume  from '../components/resume/Resume';
 import MainPage from '../components/mainPage/MainPage';
 import AboutMe from '../components/about/About';
+// import Nav from '../components/nav/Nav';
 
 library.add(fab, faUser, faAngleDown, faAddressCard, faBackward);
 
@@ -13,6 +14,7 @@ export default function App() {
   return (
     <>
       <Router>
+        {/* <Nav /> */}
         <Route exact path='/' component={MainPage} />
         <Route path='/resume' component={Resume} />
         <Route path='/aboutMe' component={AboutMe} />

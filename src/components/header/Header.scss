@@ -5,6 +5,7 @@
   border-bottom: 0.5rem solid $orange1;
   @include respond(phone) {
     height: 42vh;
+    background: black;
   }
   .bg-video {
     // display: none;
