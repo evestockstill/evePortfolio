@@ -6,10 +6,10 @@
 }
 .reflection {
     width: 100%;
-    height: 78rem;
+    height: 65rem;
     position: relative;
     opacity: .9;
-    background: url("../assets/sigeve.png") bottom/cover;
+    background: url("../assets/eveportfolio.png") bottom/cover;
     box-shadow: 0px 5rem 7rem rgba(0,0,0,0.3),
     0px 1rem 1rem rgba(0,0,0,0.1);
    @include respond(big-desktop) {
@@ -47,45 +47,21 @@
             z-index: 1;
         }
 }
-.reflectionDog1 {
-    width: 50rem;
-    height: 33rem;
-    position: relative;
-    background: url("../assets/sigeve.png") bottom/cover;
-    box-shadow: 0px 5rem 7rem rgba(0,0,0,0.3),
-    0px 1rem 1rem rgba(0,0,0,0.1);
 
-    &::after {
-        content: "";
-        background: inherit;
-        width: inherit;
-        height: 43%;
-        position: absolute;
-        bottom: -41%;
-        transform: scaleY(-1); 
-        opacity: .5;
-    }
-    &::before {
-            content: " ";
-            width: inherit;
-            height: 42%;
-            position: absolute;
-            bottom: -42%;
-            background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), white);
-            z-index: 1;
-        }
-}
 .my__article-wrapper {
      display: flex;
     justify-content: center;
     align-items: center;
     font-size: 2.3rem;
-    padding: 35rem 6rem 3rem 6rem; 
+    
+
+    // border: 2px solid black;
+    padding: 30rem 11rem 3rem 11rem; 
     @include respond (tab-port) {
     padding: 28rem 4rem 3rem 4rem; 
     }
     @include respond (phone) {
-    padding: 20rem 3rem 3rem 3rem; 
+    padding: 23rem 5rem 3rem 5rem; 
     }
   h1 {
       text-align: center;
