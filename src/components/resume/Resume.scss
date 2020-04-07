@@ -11,33 +11,37 @@
    background-repeat: no-repeat;
    background-size: cover;
    filter: grayscale(1);
-   padding: 90rem 0;
+   padding: 95rem 0;
    margin: 2rem;
    background-position: center;
    height: 100vh;
-   @include respond(phone) {
-      background-size: contain;
-      padding: 1rem;
-      margin: 0.5rem;
-   }
-   @include respond(tab) {
-      background-size: contain;
-      padding: 1rem;
-      margin: 0.5rem;
-   }
-   @include respond(tab-port-big) {
-      background-size: contain;
-      padding: 1rem;
-      margin: 0.5rem;
-   }
-   @include respond(big) {
-      background-size: cover;
-      padding: 105rem 0;
-      margin: 1rem;
-   }
    @include respond(big-desktop) {
       background-size: cover;
       padding: 110rem 0;
       margin: 1rem;
    }
+   @include respond(tab-land) {
+      background-size: cover;
+      padding: 100rem 0;
+      margin: 0.5rem;
+   }
+   @include respond(tab-port-big) {
+      background-size: cover;
+      padding: 80rem 0;
+      margin: 0.5rem;
+   }
+     @include respond(tab-port) {
+      background-size: cover;
+      padding: 75rem 0rem;
+      margin: 0.5rem;
+   }
+   @include respond(phone) {
+      background-size: contain;
+      padding: 1rem;
+      height: 68vh;
+   }
+   
+ 
+  
+   
 }
