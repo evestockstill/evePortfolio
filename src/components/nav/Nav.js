@@ -52,6 +52,20 @@ const Nav = () => {
       ></FontAwesomeIcon>
     </a>
   );
+  const email = (
+    <a
+      target='_self'
+      href='mailto:evestockstillpdx@gmail.com?'
+      className='links'
+    >
+      Email
+      <FontAwesomeIcon
+        icon='envelope'
+        className='fa'
+        id='mail'
+      ></FontAwesomeIcon>
+    </a>
+  );
   return (
     <>
       <nav>
@@ -60,6 +74,7 @@ const Nav = () => {
           <li>{aboutMe}</li>
           <li>{linkedIn}</li>
           <li>{github}</li>
+          <li>{email}</li>
         </ul>
       </nav>
     </>

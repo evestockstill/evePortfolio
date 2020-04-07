@@ -26,7 +26,7 @@ const Header = () => {
             <h2 className='text' data='.'>
               Stockstill
             </h2>
-            <h4 className='my-title'>Software Developer</h4>
+            <h4 className='my-title'>Full Stack Developer</h4>
           </header>
         </div>
       </div>
