@@ -6,12 +6,8 @@ import { NavLink } from 'react-router-dom';
 const Nav = () => {
   const user = (
     <NavLink to='/aboutMe' className='links'>
-     About 
-      <FontAwesomeIcon
-        icon='user'
-        className='fa'
-        id='card'
-      ></FontAwesomeIcon>
+      About
+      <FontAwesomeIcon icon='user' className='fa' id='card'></FontAwesomeIcon>
     </NavLink>
   );
   const aboutMe = (
@@ -66,6 +62,12 @@ const Nav = () => {
       ></FontAwesomeIcon>
     </a>
   );
+  const home = (
+    <NavLink to='/' className='links'>
+      Home
+      <FontAwesomeIcon icon='home' className='fa' id='home'></FontAwesomeIcon>
+    </NavLink>
+  );
   return (
     <>
       <nav>
@@ -75,6 +77,7 @@ const Nav = () => {
           <li>{linkedIn}</li>
           <li>{github}</li>
           <li>{email}</li>
+          <li>{home}</li>
         </ul>
       </nav>
     </>
