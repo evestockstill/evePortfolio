@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import './Project.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import pet from '../assets/pattern.jpeg';
-
 
 const Project = () => {
   const [open, setOpen] = useState(false);
@@ -16,11 +14,7 @@ const Project = () => {
     </a>
   );
   const petWeb = (
-    <a
-      target='_self'
-      href='https://pet-pals-staging.netlify.com/'
-      className='linkbtn'
-    >
+    <a target='_self' href='https://pet-pals.netlify.com' className='linkbtn'>
       Website
     </a>
   );
@@ -74,6 +68,24 @@ const Project = () => {
       Website
     </a>
   );
+  const gitLegal = (
+    <a
+      target='_self'
+      href='https://github.com/GLH-PDX-DevLaw'
+      className='linkbtn'
+    >
+      Github Repo
+    </a>
+  );
+  const legalWeb = (
+    <a
+      target='_self'
+      href='https://law.uoregon.edu/global-hackathon-law-students-explore-access-justice-tech'
+      className='linkbtn'
+    >
+      Article
+    </a>
+  );
   const down = (
     <FontAwesomeIcon
       icon='angle-down'
@@ -103,11 +115,10 @@ const Project = () => {
             <div className='back-text'>
               <h1>Pet Pals</h1>
               <p>
-                Pet Pals app connects neighbors and their dogs to each other to
-                exchange a quick walk or bathroom break when working opposite
-                shifts. Done in a week long sprint with mob, pair, and solo
-                coding. I worked on design, styling and helped created models
-                and routes. React, Hooks, MongoDB, socket.io, SASS, Jest
+                Pet Pals app connects neighbors and their dogs to each other in
+                order to exchange a quick walk or break when working
+                opposite shifts. I worked on design, developed with SASS for
+                reusable component architecture. Wrote models with MongoDB and tested with Jest. Front end built with React.
               </p>
               <button className='btn'>{githubPet}</button>
               <button className='btn'>{petWeb}</button>
@@ -126,11 +137,11 @@ const Project = () => {
             <div className='back-text'>
               <h1>FrontPage</h1>
               <p>
-                Front-page is a news aggregating app with a Tinderesque
-                interface. Developed in a small team in a 4-day sprint. Mobile
+                Front-page is a news aggregating app with a Tinder like
+                interface. Developed with small team in a 4-day sprint. Mobile
                 first design. Dev practices include mob, and pair programing for
                 an efficient and collaborative environment. HTML/CSS,
-                JavaScript, PostgreSQL, Component architecture, Q-Unit
+                JavaScript, PostgreSQL, Component architecture, Q-Unit testing.
               </p>
               <button className='btn'>{gitFront}</button>
               <button className='btn'>{frontWeb}</button>
@@ -149,12 +160,11 @@ const Project = () => {
             <div className='back-text'>
               <h1>Guess Who</h1>
               <p>
-                Guess who? Updating the old game, excluding gender and race
-                questions to reflect current times. Guess to eliminate
-                characters and win by making a correct guess. Using local
-                storage to persist user data and leader boards. Responsible for
-                the game board animations and styling. Vanilla JavaScript,
-                HTML/CSS
+                Guess who? Updating the old game, with current times. Guess to
+                eliminate characters and win by making a correct guess. Using
+                local storage to persist user data and leader boards. Javascript
+                logic to determine users input. Responsible for the game board
+                animations and styling with HTML/CSS
               </p>
               <button className='btn'>{gitGuess}</button>
               <button className='btn'>{guessWeb}</button>
@@ -173,14 +183,39 @@ const Project = () => {
             <div className='back-text'>
               <h1>Music Search</h1>
               <p>
-                Music Search is an app that lets you search music artist by name.
-                Search through the artist to find albums. Choose an album to find
-                songs, and choose song to discover lyrics. Functionality created
-                in a team of 3 in a 2 day sprint. I used another 2 days to
-                design site. React, custom Hooks, REST APIs, and PostCSS
+                Music Search is an app that lets you search artist by name to
+                find albums and lyrics. Functionality created using custom hooks
+                and React. Queried 3 API's to produce a single page app. 3
+                person 1 day project, I then used another 2 days to design site
+                with PostCSS including logic for loading spinner and default
+                images.
               </p>
               <button className='btn'>{githubMusic}</button>
               <button className='btn'>{musicWeb}</button>
+            </div>
+          </article>
+          <article className='project-item project-item-black'>
+            <div
+              onClick={() => setOpen(!open)}
+              className={`frontText ${
+                open ? 'frontText__open' : 'frontText__close'
+              }`}
+            >
+              {down}
+              <h1>Legal Router</h1>
+            </div>
+            <div className='back-text'>
+              <h1>Legal Router</h1>
+              <p>
+                Developed during a hackathon on a team of 4 devs
+                and 2 law students in a day and a half. The app was built
+                specifically for low-income families in Oregon who need legal
+                assistance focusing on domestic violence. I styled the mobile
+                first design with PostCSS. Link is to a write up and demo of app
+                in University of Oregon Law department
+              </p>
+              <button className='btn'>{gitLegal}</button>
+              <button className='btn'>{legalWeb}</button>
             </div>
           </article>
         </div>

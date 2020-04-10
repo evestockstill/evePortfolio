@@ -2,7 +2,7 @@ import React from 'react';
 import './Header.scss';
 import mp4 from '../assets/glitter.mp4';
 import Media from 'react-media';
-import Nav from '../nav/Nav';
+// import Nav from '../nav/Nav';
 
 const Header = () => {
   return (
@@ -10,7 +10,7 @@ const Header = () => {
       <div className='wrapper'>
         <div className='background'>
           <header className='header'>
-            <Nav />
+            {/* <Nav /> */}
             <div className='bg-video'>
               <Media
                 query='(min-width: 599px)'
