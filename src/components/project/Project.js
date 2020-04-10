@@ -14,7 +14,7 @@ const Project = () => {
     </a>
   );
   const petWeb = (
-    <a target='_self' href='https://pet-pals.netlify.com' className='linkbtn'>
+    <a target='blank' href='https://pet-pals.netlify.com' className='linkbtn'>
       Website
     </a>
   );
@@ -43,7 +43,7 @@ const Project = () => {
   );
   const frontWeb = (
     <a
-      target='_self'
+      target='blank'
       href='https://front-pagenews.herokuapp.com/'
       className='linkbtn'
     >
@@ -61,7 +61,7 @@ const Project = () => {
   );
   const guessWeb = (
     <a
-      target='_self'
+      target='blank'
       href='https://the-wild-cards.github.io/guess-who/'
       className='linkbtn'
     >
