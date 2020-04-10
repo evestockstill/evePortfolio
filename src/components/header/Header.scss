@@ -4,7 +4,7 @@
   height: 45vh;
   border-bottom: 0.5rem solid $orange1;
   @include respond(phone) {
-    height: 30vh;
+    height: 40vh;
     background: black;
   }
   .bg-video {
@@ -35,7 +35,7 @@
     }
     @include respond(phone) {
       font-size: 5.9rem;
-      top: 15.6%;
+      top: 19.8%;
     }
   }
   .my-title {
@@ -52,8 +52,8 @@
     }
     
     @include respond(phone) {
-      font-size: 1.9rem;
-      top: 26%;
+      font-size: 1.8rem;
+      top: 33%;
       letter-spacing: .2rem;
     }
   }
@@ -65,7 +65,6 @@
     
      @include respond(phone) {
       font-size: 5.9rem;
-      top: 21.5%;
      }
     &:before {
       content: attr(data);

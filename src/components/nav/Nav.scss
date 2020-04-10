@@ -38,9 +38,6 @@ nav {
     letter-spacing: 2px;
     transition: all 0.2s;
     @include respond(phone) {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
       font-size: 1.7rem;
     }
     &:hover {
