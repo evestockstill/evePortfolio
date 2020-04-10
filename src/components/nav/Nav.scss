@@ -4,7 +4,6 @@ nav {
   justify-content: flex-end;
   flex-direction: row;
   padding-right: 1rem;
-  height: 4rem;
   background-color: #d4d4d4;
   @include respond(phone) {
     justify-content: center;
@@ -29,7 +28,7 @@ nav {
     text-decoration: none;
     display: block;
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     padding: 1.5rem 0.5rem 0rem 0.5rem;
     background-image: linear-gradient(to right, black, $black-med);
     -webkit-background-clip: text;
