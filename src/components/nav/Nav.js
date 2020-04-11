@@ -1,23 +1,16 @@
 import React from 'react';
 import './Nav.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { NavLink } from 'react-router-dom';
 
 const Nav = () => {
   const user = (
     <NavLink to='/aboutMe' className='links'>
       About
-      <FontAwesomeIcon icon='user' className='fa' id='card'></FontAwesomeIcon>
     </NavLink>
   );
   const aboutMe = (
     <NavLink to='/resume' className='links'>
       Resume
-      <FontAwesomeIcon
-        icon='address-card'
-        className='fa'
-        id='user'
-      ></FontAwesomeIcon>
     </NavLink>
   );
   const linkedIn = (
@@ -27,11 +20,6 @@ const Nav = () => {
       className='links'
     >
       LinkedIn
-      <FontAwesomeIcon
-        icon={['fab', 'linkedin']}
-        className='fa'
-        id='linkedin'
-      ></FontAwesomeIcon>
     </a>
   );
   const github = (
@@ -41,11 +29,6 @@ const Nav = () => {
       className='links'
     >
       Github
-      <FontAwesomeIcon
-        icon={['fab', 'github']}
-        className='fa'
-        id='github'
-      ></FontAwesomeIcon>
     </a>
   );
   const email = (
@@ -55,17 +38,11 @@ const Nav = () => {
       className='links'
     >
       Email
-      <FontAwesomeIcon
-        icon='envelope'
-        className='fa'
-        id='mail'
-      ></FontAwesomeIcon>
     </a>
   );
   const home = (
     <NavLink to='/' className='links'>
       Home
-      <FontAwesomeIcon icon='home' className='fa' id='home'></FontAwesomeIcon>
     </NavLink>
   );
   return (

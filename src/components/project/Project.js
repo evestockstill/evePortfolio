@@ -187,8 +187,8 @@ const Project = () => {
                 find albums and lyrics. Functionality created using custom hooks
                 and React. Queried 3 API's to produce a single page app. 3
                 person 1 day project, another 2 days I designed app 
-                with PostCSS including logic for loading spinner and default
-                images.
+                with PostCSS with loading spinner and default
+                images JSX logic.
               </p>
               <button className='btn'>{githubMusic}</button>
               <button className='btn'>{musicWeb}</button>
@@ -207,7 +207,7 @@ const Project = () => {
             <div className='back-text'>
               <h1>Legal Router</h1>
               <p>
-                Developed at a hackathon on a team of 4 devs
+                Hackathon app, on a team of 4 devs
                 and 2 law students in 1.5 days. The app was built
                 specifically for low-income families who need legal
                 assistance focusing on domestic violence. I styled the mobile
