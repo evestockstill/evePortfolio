@@ -95,25 +95,25 @@
   margin: 0 auto;
   height: 100%;
   transition: bottom 2s;
-  padding: 2rem 1rem 1rem 0.5rem;
+  padding: .8rem 0.5rem;
   font-size: 1.9rem;
   @include respond(tab-port) {
     font-size: 1.75rem;
   }
   @include respond(phone) {
-    font-size: 1.45rem;
+    font-size: 1.5rem;
   }
   &:hover {
     bottom: 0;
   }
   h1 {
-    margin-bottom: 1rem;
+    margin-bottom: .7rem;
     font-size: 3rem;
     letter-spacing: 0.2rem;
     text-transform: uppercase;
     color: $orange1;
     @include respond(big-desktop) {
-      font-size: 3.3rem;
+      font-size: 3rem;
     }
     @include respond(tab-land) {
       margin-bottom: 0.5rem;
@@ -130,7 +130,7 @@
   }
 }
 .back-text button {
-  margin: 2.5rem 2rem 1.5rem 0rem;
+  margin: 1.5rem 2rem 1.5rem 0rem;
   padding: 1rem;
   background: transparent;
   border: 2px solid $orange1;
