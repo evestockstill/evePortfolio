@@ -187,8 +187,8 @@ const Project = () => {
                 find albums and lyrics. Functionality created using custom hooks
                 and React. Queried 3 API's to produce a single page app. 3
                 person 1 day project, another 2 days I designed app 
-                with PostCSS with loading spinner and default
-                images JSX logic.
+                with PostCSS including loading spinners and default
+                images within JSX.
               </p>
               <button className='btn'>{githubMusic}</button>
               <button className='btn'>{musicWeb}</button>
