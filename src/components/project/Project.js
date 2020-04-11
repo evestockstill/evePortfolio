@@ -186,7 +186,7 @@ const Project = () => {
                 Music Search is an app that lets you search artist by name to
                 find albums and lyrics. Functionality created using custom hooks
                 and React. Queried 3 API's to produce a single page app. 3
-                person 1 day project, I then used another 2 days to design site
+                person 1 day project, another 2 days to design 
                 with PostCSS including logic for loading spinner and default
                 images.
               </p>
