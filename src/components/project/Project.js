@@ -141,7 +141,7 @@ const Project = () => {
                 interface. Developed with small team in a 4-day sprint. Mobile
                 first design. Dev practices include mob, and pair programing for
                 an efficient and collaborative environment. HTML/CSS,
-                JavaScript, PostgreSQL, Component architecture, Q-Unit testing.
+                JavaScript, PostgreSQL, Component architecture, Q-Unit.
               </p>
               <button className='btn'>{gitFront}</button>
               <button className='btn'>{frontWeb}</button>
@@ -207,9 +207,9 @@ const Project = () => {
             <div className='back-text'>
               <h1>Legal Router</h1>
               <p>
-                Developed during a hackathon on a team of 4 devs
-                and 2 law students in a day and a half. The app was built
-                specifically for low-income families in Oregon who need legal
+                Developed at a hackathon on a team of 4 devs
+                and 2 law students in 1.5 days. The app was built
+                specifically for low-income families who need legal
                 assistance focusing on domestic violence. I styled the mobile
                 first design with PostCSS. Link is to a write up and demo of app
                 in University of Oregon Law department
