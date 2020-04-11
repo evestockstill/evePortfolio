@@ -1,6 +1,6 @@
-@import "../abstract/global.scss";
+@import '../abstract/global.scss';
 .slide__Title {
-    text-align: center;
+  text-align: center;
   font-size: 3rem;
   text-transform: uppercase;
   background-image: $background;
@@ -11,54 +11,59 @@
   padding-top: 1rem;
 }
 .slide__container {
-    width: 100vw;
-    height: 20vh;
+  width: 100vw;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $orange1;
+  font-size: 1.6rem;
+
+  .slider__wrap {
+    height: 12rem;
+    width: 62vw;
+    display: flex;
+    position: relative;
+    background-color: D4D4D4;
+    overflow: hidden;
+    &::before,
+    &::after {
+      height: 10rem;
+      width: 20rem;
+      position: absolute;
+      content: '';
+      background: linear-gradient(
+        to right white 0% rgba(255, 255, 255, 0) 100%
+      );
+      z-index: 2;
+    }
+    &::before {
+      left: 0;
+      top: 0;
+    }
+    &::after {
+      right: 0;
+      top: 0;
+      transform: rotateZ(180deg);
+    }
+  }
+  .icons {
+    color: $orange1;
+    font-size: 6rem;
+    height: 5.5rem;
+    width: 5.5rem;
+  }
+
+  .icon-title {
+    padding: 0 4.5rem 0 1rem;
+  }
+  .img__wrap {
+    height: 10rem;
     display: flex;
     align-items: center;
-    justify-content: center;
-    color: $orange1;
-    font-size: 1.6rem;
-
-    .slider__wrap {
-        height: 12rem;
-        width: 62vw;
-        display: flex;
-        position: relative;
-        background-color: D4D4D4;
-        overflow: hidden;
-        &::before,
-        &::after {
-            height: 10rem;
-            width: 20rem;
-            position: absolute;
-            content: "";
-            background: linear-gradient(to right white 0% rgba(255, 255, 255, 0) 100%);
-            z-index: 2;
-        }
-        &::before {
-            left: 0;
-            top: 0;
-        }
-        &::after {
-            right: 0;
-            top: 0;
-            transform: rotateZ(180deg);
-        }
+    animation: iconSlide 35s linear infinite;
+    @include respond(phone) {
+      animation: iconSlide 20s linear infinite;
     }
-    .icons {
-        color: $orange1;
-        font-size: 6rem;
-        height: 5.5rem;
-        width: 5.5rem;
-    }
-   
-    .icon-title {
-        padding: 0 4.5rem 0 1rem;
-    }
-    .img__wrap {
-        height: 10rem;
-        display: flex;
-        align-items: center;
-        animation: iconSlide 45s linear infinite;
-    }
+  }
 }

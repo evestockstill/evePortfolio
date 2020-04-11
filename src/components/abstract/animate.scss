@@ -74,3 +74,8 @@
   0% {transform: translateX(0);}
   100% {transform: translateX(-100%);}
 }
+@keyframes blur {
+    0% {
+      box-shadow: 0 0 0 0 $orange1;
+    }
+  }

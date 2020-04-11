@@ -1,4 +1,4 @@
-@import "../abstract/global.scss";
+@import '../abstract/global.scss';
 
 .header {
   height: 45vh;
@@ -42,7 +42,7 @@
     @include text-color(2.5rem);
     top: 34%;
     left: 50%;
-    letter-spacing: .5rem;
+    letter-spacing: 0.5rem;
     text-align: center;
     @include respond(big-desktop) {
       top: 36%;
@@ -50,11 +50,11 @@
     @include respond(tab-land) {
       top: 33.5%;
     }
-    
+
     @include respond(phone) {
       font-size: 1.8rem;
       top: 33%;
-      letter-spacing: .2rem;
+      letter-spacing: 0.2rem;
     }
   }
   .text {
@@ -62,10 +62,10 @@
     top: 27%;
     left: 50%;
     position: absolute;
-    
-     @include respond(phone) {
+
+    @include respond(phone) {
       font-size: 5.9rem;
-     }
+    }
     &:before {
       content: attr(data);
       position: absolute;
@@ -77,25 +77,26 @@
       left: 76%;
       bottom: 65.1%;
       text-align: left;
-      animation: moveInLeft 1s ease-out, flicker 2.2s linear infinite;
+      animation: moveInLeft 2s ease-out, flicker 2.2s linear infinite;
       letter-spacing: 0.2rem;
       @include respond(big-desktop) {
         left: 75.9%;
         bottom: 60.5%;
       }
       @include respond(tab-land) {
-      left: 75.9%;
-      bottom: 65.7%;
-    }
-    @include respond(tab-port) {
-      left: 75.9%;
-      bottom: 65.5%;
-    }
-    @include respond(phone) {
-      left: 75.9%;
-      bottom: 65%;
-      color: $orange1;
-    }
+        left: 75.9%;
+        bottom: 65.7%;
+      }
+      @include respond(tab-port) {
+        left: 75.9%;
+        bottom: 65.5%;
+      }
+      @include respond(phone) {
+        left: 75.9%;
+        bottom: 65.5%;
+        color: $orange1;
+        animation: moveInLeft 5s ease-out, flicker 2.2s linear infinite;
+      }
     }
   }
 }
