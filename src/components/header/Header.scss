@@ -30,7 +30,7 @@
     @include respond(big-desktop) {
       top: 22.5%;
     }
-     @include respond(tab-land) {
+    @include respond(tab-land) {
       top: 25%;
     }
     @include respond(tab-port) {
@@ -98,7 +98,7 @@
       @include respond(phone) {
         left: 76.1%;
         bottom: 67.5%;
-        color: $grey-white;
+        color: $white;
         animation: moveInLeft 5s ease-out, flicker 2.2s linear infinite;
       }
     }

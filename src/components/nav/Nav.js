@@ -42,7 +42,7 @@ const Nav = () => {
   );
   const home = (
     <NavLink to='/' className='links'>
-      Home
+      Projects
     </NavLink>
   );
   return (
