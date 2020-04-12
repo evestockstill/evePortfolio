@@ -81,7 +81,7 @@
       left: 76%;
       bottom: 65.1%;
       text-align: left;
-      animation: moveInLeft 2s ease-out, flicker 2.2s linear infinite;
+      animation: moveInLeft 2s ease-in-out, flicker 2.2s linear infinite;
       letter-spacing: 0.2rem;
       @include respond(big-desktop) {
         left: 75.9%;
@@ -97,9 +97,9 @@
       }
       @include respond(phone) {
         left: 76.1%;
-        bottom: 67.5%;
+        bottom: 72.5%;
         color: $white;
-        animation: moveInLeft 5s ease-out, flicker 2.2s linear infinite;
+        animation: moveInLeft 3s ease-out, flicker 2.2s linear infinite;
       }
     }
   }

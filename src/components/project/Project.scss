@@ -4,8 +4,10 @@
   margin: 4rem 0;
 }
 .title-text {
-  text-align: center;
   font-size: 4rem;
+  
+  .project-title {
+  text-align: center;
   text-transform: uppercase;
   font-weight: $weight;
   background-image: $background;
@@ -13,12 +15,14 @@
   background-clip: $clip;
   color: $color;
   letter-spacing: $space;
+  padding: 3rem
+  }
 }
 
 #projects {
   min-height: 100vh;
   background: url('../assets/person.png') center/cover fixed no-repeat;
-  padding: 2rem 0 8rem 0;
+  padding: 4rem 0 8rem 0;
 }
 
 .project-container {
