@@ -1,10 +1,10 @@
 @import '../abstract/global.scss';
 
 .header {
-  height: 45vh;
+  height: 46vh;
   border-bottom: 0.5rem solid $orange1;
   @include respond(phone) {
-    height: 40vh;
+    height: 36vh;
     background: black;
   }
   .bg-video {
@@ -25,46 +25,50 @@
 
   .first {
     @include text-color(6.8rem);
-    top: 19%;
+    top: 24.5%;
     left: 50%;
     @include respond(big-desktop) {
-      top: 17.5%;
+      top: 22.5%;
+    }
+    @include respond(tab-land) {
+      top: 25%;
     }
     @include respond(tab-port) {
-      top: 19.4%;
+      top: 25.4%;
     }
     @include respond(phone) {
       font-size: 5.9rem;
-      top: 19%;
+      top: 17%;
     }
   }
   .my-title {
     @include text-color(2.5rem);
-    top: 34%;
+    top: 39.8%;
     left: 50%;
-    letter-spacing: 0.5rem;
+    letter-spacing: 0.6rem;
     text-align: center;
     @include respond(big-desktop) {
-      top: 36%;
+      top: 42%;
     }
     @include respond(tab-land) {
-      top: 33.5%;
+      top: 39.5%;
     }
 
     @include respond(phone) {
       font-size: 1.8rem;
-      top: 33%;
-      letter-spacing: 0.2rem;
+      top: 30%;
+      letter-spacing: 0.3rem;
     }
   }
   .text {
     @include text-color(6.8rem);
-    top: 27%;
+    top: 32.9%;
     left: 50%;
     position: absolute;
 
     @include respond(phone) {
       font-size: 5.9rem;
+      top: 24.3%;
     }
     &:before {
       content: attr(data);
@@ -92,9 +96,9 @@
         bottom: 65.5%;
       }
       @include respond(phone) {
-        left: 75.9%;
-        bottom: 65.5%;
-        color: $orange1;
+        left: 76.1%;
+        bottom: 67.5%;
+        color: $white;
         animation: moveInLeft 5s ease-out, flicker 2.2s linear infinite;
       }
     }
