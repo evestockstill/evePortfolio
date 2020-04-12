@@ -2,7 +2,7 @@
 nav {
   display: flex;
   justify-content: flex-end;
-   background: linear-gradient(to right, $white, $whiteShadow);
+   background: linear-gradient(to right, $white, #d4d4d4);
 
   @include respond(tab-port) {
     justify-content: center;
