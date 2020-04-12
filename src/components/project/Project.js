@@ -98,7 +98,7 @@ const Project = () => {
       <section id='projects'>
         <div className='title'>
           <div className='title-text'>
-            <h1>Projects</h1>
+            <h1 className='project-title'>Projects</h1>
           </div>
         </div>
         <div className='project-container'>
