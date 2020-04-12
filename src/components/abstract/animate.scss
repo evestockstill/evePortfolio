@@ -1,18 +1,19 @@
 @import './variables.scss';
+@import './mixins.scss';
 @keyframes moveInLeft {
   0% {
     opacity: 0;
     color: $grey-med;
-    transform: translateX(-55rem);
+    transform: translateX(-80rem);
   }
   30% {
-       opacity: 0.3;
+       opacity: 0.4;
     color: $grey-med;
   }
   80% {
     opacity: 0.5;
     color: $grey-med;
-    transform: translateX(20rem);
+    transform: translateX(14.2rem);
   }
   100% {
     opacity: 1;
@@ -71,11 +72,18 @@
 	}
 }
 @keyframes iconSlide {
-  0% {transform: translateX(0);}
-  100% {transform: translateX(-100%);}
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 @keyframes blur {
     0% {
       box-shadow: 0 0 0 0 $orange1;
+    }
+    50% {
+    transform: translateX(.2rem);
     }
   }
