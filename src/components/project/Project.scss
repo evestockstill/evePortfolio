@@ -2,7 +2,7 @@
 
 
 .title-text {
-  font-size: 4rem;
+  font-size: 3.5rem;
   
   .project-title {
   text-align: center;
@@ -19,7 +19,7 @@
 
 #projects {
   min-height: 100vh;
-  background: url('../assets/person.png') center/cover fixed no-repeat;
+  background: rgb(207, 205, 205);
   padding: 4rem 0 8rem 0;
 }
 
@@ -42,10 +42,10 @@
   
 }
 .project-item-black {
-  background: linear-gradient($black-med, $black-med);
+  background: linear-gradient($black, $black);
   color: white;
   @include respond(phone) {
-    background: linear-gradient($black-med1, $black-med1);
+    background: linear-gradient($black, $black);
   }
   a {
     padding: 2.1rem;
@@ -87,8 +87,12 @@
 .frontText {
   text-align: center;
   transition: transform 2s;
-  font-size: 3.5rem;
+  font-size: 3rem;
   letter-spacing: 0.2rem;
+   &:hover {
+    color: $orange1;
+    cursor: pointer;
+  }
 }
 .back-text {
   position: absolute;
@@ -98,7 +102,7 @@
   height: 100%;
   transition: bottom 2s;
   padding: .8rem 0.5rem;
-  font-size: 1.9rem;
+  font-size: 1.8rem;
   @include respond(tab-port) {
     font-size: 1.75rem;
   }
@@ -110,7 +114,7 @@
   }
   h1 {
     margin: .3rem;
-    font-size: 2.7rem;
+    font-size: 2.6rem;
     letter-spacing: 0.2rem;
     text-transform: uppercase;
     color: $orange1;
@@ -122,7 +126,9 @@
     }
     @include respond(tab-port) {
       font-size: 2.3rem;
-      margin: .1rem
+      margin: .1rem;
+      margin-top: 1rem;
+
     }
     @include respond(phone) {
       margin-bottom: 0.1rem;
@@ -136,6 +142,10 @@
   padding: 1rem;
   background: transparent;
   border: 2px solid $orange1;
+  transition: all .4s ease-in;
+  &:hover {
+    background: $orange1;
+  }
   @include respond(big-desktop) {
     margin: 2.2rem 2rem 2.7rem 0rem;
   }

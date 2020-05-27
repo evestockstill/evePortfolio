@@ -15,7 +15,7 @@ const Nav = () => {
   );
   const linkedIn = (
     <a
-      target='_self'
+      target='blank'
       href='https://www.linkedin.com/in/evestockstill/'
       className='links'
     >
@@ -24,7 +24,7 @@ const Nav = () => {
   );
   const github = (
     <a
-      target='_self'
+      target='blank'
       href='https://www.github.com/evestockstill'
       className='links'
     >
@@ -33,7 +33,7 @@ const Nav = () => {
   );
   const email = (
     <a
-      target='_self'
+      target='blank'
       href='mailto:evestockstillpdx@gmail.com?'
       className='links'
     >
@@ -50,11 +50,11 @@ const Nav = () => {
       <nav>
         <ul>
           <li>{user}</li>
-          <li>{aboutMe}</li>
+          <li>{home}</li>
+          {/* <li>{aboutMe}</li> */}
           <li>{linkedIn}</li>
           <li>{github}</li>
           <li>{email}</li>
-          <li>{home}</li>
         </ul>
       </nav>
     </>
