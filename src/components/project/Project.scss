@@ -42,10 +42,10 @@
   
 }
 .project-item-black {
-  background: linear-gradient($black-med1, $black);
+  background: linear-gradient($black, $black);
   color: white;
   @include respond(phone) {
-    background: linear-gradient($black-med1, $black-med1);
+    background: linear-gradient($black, $black);
   }
   a {
     padding: 2.1rem;
